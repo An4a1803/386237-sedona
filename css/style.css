@@ -1,0 +1,57 @@
+/*1. прописываем стили для body, h1, h2- по классам */
+body {
+    background-color: #AC9C9C;
+    /*Серый заменить на белый (пока чтоб было видно буквы) */
+    font-size: 14px;
+    color: #000;
+    line-height: 21px;
+    font-weight: bold;
+    font-family: "PT Sans", "Sample", "sans-serif";
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 24px;
+    color: #000;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.properties-black-h3 {
+    font-size: 21px;
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.properties-white-h3 {
+    font-size: 21px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.properties-white-h4 {
+    font-size: 14px;
+    color: #fff;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.properties-black-h4 {
+    font-size: 14px;
+    color: #000;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.properties-menu-black-h4 {
+    font-size: 14px;
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+
