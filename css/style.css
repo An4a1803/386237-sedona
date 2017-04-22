@@ -53,5 +53,71 @@ h2 {
     text-decoration: none;
 }
 
+header.container {
+    width: 1200px;
+    background: #ab2635;
+    margin: -10px auto;
+}
+
+/*ВОПРОС 1. Как расположить лого высотой 70пикс в хедере высостой 56 ???*/
+main.container {
+    width: 1200px;
+    background: #552635;
+    margin: -20px auto;
+}
+/*ВОПРОС 1.*/
+
+/*ВОПРОС 2. Как сделать навигатор и ссылки? Чтобы логотип вылезал немного вниз/
+И все ссылки расположить в одну строку?
+...*/
+nav {
+    width: 1200px;
+    background: #999635;
+    margin: 0px auto;
+    float: left;
+}
+
+.menu {
+    width: 1200px;
+    background: #C17AA1;
+}
+
+li {
+    width: 236px;
+    max-height: 56px;
+    margin-left: 0px;
+    margin-right: 0px;
+    float: left;
+    margin-top: 0px;
+
+}
+/*ВОПРОС 2*/
+
+.card-welcome {
+    position: absolute;
+    width: 460px;
+    margin-top: 332px;
+    margin-left: 350px;
+}
+
+/*ВОПРОС 3. Как расположить картинку под меню как в макете? Абсолютом??*/
+.card-sedona {
+    /*height: 508;*/
+    margin-left: -40px;
+    margin-top: 0px;
+}
+/*ВОПРОС 3*/
+
+
+
+
+
+footer.container {
+    width: 1200px;
+    background: #359845;
+    margin: -21px auto;
+
+}
+
 
 
