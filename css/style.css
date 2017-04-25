@@ -183,7 +183,6 @@ main.container-hotels {
     width: 1200px;
     height: 216px;
     margin: 0px auto;
-    /*background: url("img/background-2-small.jpg");*/
 }
 
 .filter-infrastructure {
@@ -210,11 +209,11 @@ main.container-hotels {
     width: 1200px;
     height: 216px;
     background: url("img/background-2-small.jpg");
-    margin: -15px -40px;
-}
+    margin: 10px auto;
 /*КОНЕЦ форма с фильтром жилья*/
 
 /*НАЧАЛО секция с сылками найдень и т.п.*/
+
 .search-left-size {
     /*display: inline-block;*/
     background: #fff;
@@ -245,29 +244,63 @@ main.container-hotels {
 /*КОНЕЦ секция с сылками найден и т.п.*/
 
 /*НАЧАЛО секция с отелями*/
-.found-houses {
-    width: 217px;
-    height: 154px;
+.found {
+    width: 1200px;
+    height: 155px;
+    margin: 0px;
+    padding: 0px;
     background: #fff;
-    margin-top: 2px;
-    padding: 31px auto;
+}
+
+.found-houses {
+    width: 600px;
+    /*float: left;*/
+}
+
+.found-houses-img {
+    width: 230px;
     float: left;
 }
 
+.found-houses-all {
+    width: 268px;
+    height: 148px;
+}
+
 .found-houses-info {
-    width: 260px;
-    height: 154px;
-    background: #fff;
-    margin-top: 2px;
-    padding: 31px 0px;
+    width: 265px;
+    height: 50px;
     float: left;
 }
+
+.found-about {
+    width: 265px;
+    height: 50px;
+    float: left;
+}
+
+.found-houses-type {
+    width: 120px;
+    height: 50px;
+    /*display: inline-block;*/
+    /*float: left;*/
+}
+
+.found-houses-price {
+    width: 120px;
+    height: 50px;
+    /*display: inline-block;*/
+    /*float: left;*/
+}
+
+.found-button
+
 
 
 /*КОНЕЦ секция с отелями*/
 
 
-/*КОНЕЦ ОТЕЛИ*/
+
 
 
 

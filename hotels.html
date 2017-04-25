@@ -25,11 +25,10 @@
     <!--НЕ МОГУ ВСТАВИТЬ БЭКГРАУНД В ФОРМУ!!!-->
       <div class="background-filter">
         <figure>
-          <img class="background-2" src="img/background-2-small.jpg" alt="Filter">
+          <img src="img/background-2-small.jpg" alt="Filter">
         </figure>
-      </div>
-      <section class="filter clearfix">
-        <form method="post" action="/">
+        <section class="filter clearfix">
+          <form method="post" action="/">
           <div class="filter-infrastructure">
             <h3 class="filter-infrastructure-title">Инфраструктура</h3>
             <input type="checkbox" name="filter-pool">
@@ -58,8 +57,10 @@
            <button class="filter-btn" type="submit">Показать
            </button>
          </div>
-        </form>
-      </section>
+          </form>
+        </section>
+      </div>
+
       <!-- блок с сортировкой и стреклками-->
       <div class="search clearfix">
       <div class="search-left-size">
@@ -75,78 +76,54 @@
         <a class="search-down" href="#"></a>
       </div>
     </div>
-    <!--блок с найдеными результатами -->
-    <div class="found"><!--блок с найдеными результатами -->
-      <div class="found-houses clearfix">
-        <figure class="found-houses-img">
+
+
+<!--ПРОБНЫЙ БЛОК С ОТЕЛЯМИ-->
+  <div class="found clearfix">
+    <div class="found-houses clearfix">
+      <div class="found-houses-img">
+        <figure> <!--(картинка с отелем)-->
           <img src="img/amara-resort.jpg" alt="Amara resort & spa">
         </figure>
       </div>
-        <div class="found-houses-info">
-          <a class="founf-info-title properties-black-h3" href="#">Amara resort & spa</a>
-          <div class="found-about clearfix"><!-- начало блок с типом отеля и ценой -->
-            <div class="found-about-houses">
-              <p class="found-houses-type properties-black-h4">Гостиница</p>
-              <a class="found-houses-more" href="#">Подробнее</a>
-            </div>
-            <div class="found-about-book">
-              <p class="found-about-price properties-black-h4">от 4000 р.</p>
-              <a class="found-houses-btn" href="#">Забронировать</a>
-            </div>
-          </div>
+      <div class="found-houses-all clearfix">
+      <div class="found-houses-info"><!--(блок с названием отеля)-->
+        <a class="found-info-title properties-black-h3" href="#">Amara resort & spa</a>
+      </div>
+      <div class="found-about clearfix"><!--(блок с гостиницей и 4000р)-->
+        <div class="found-houses-type">
+          <p class="found-houses-type properties-black-h4">Гостиница</p>
+        </div>
+        <div class="found-houses-price">
+          <p class="found-about-price properties-black-h4">от 4000 р.</p>
         </div>
       </div>
-      <div class="found-houses-rating"><!-- блок с рейтингом отеля 4 звезды-->
-        <div class="found-rating-stars found-ratings-good"></div>
-        <p class="found-rating-info properties-black-h4">Рейтинг: 8,5</p>
+    </div>
+    <div class="found-button clearfix"><!--(блок с кнопками подробнее и забронировать)-->
+      <div class="found-button-type">
+        <a class="found-button-more" href="#">Подробнее</a>
+      </div>
+      <div class=" found-button-type">
+        <a class="found-button-book" href="#">Забронировать</a>
       </div>
     </div>
-    <div class="found-houses clearfix">
-      <figure class="found-houses-img">
-        <img src="img/desert.jpg" alt="Desert quail inn">
-      </figure>
-      <div class="found-houses-info">
-        <a class="founf-info-title properties-black-h3" href="#">Desert quail inn</a>
-        <div class="found-about clearfix">
-          <!-- начало блок с типом отеля и ценой -->
-          <div class="found-about-houses">
-            <p class="found-houses-type properties-black-h4">Мотель</p>
-            <a class="found-houses-more" href="#">Подробнее</a>
-          </div>
-          <div class="found-about-book">
-            <p class="found-about-price properties-black-h4">от 3000 р.</p>
-            <a class="found-houses-btn" href="#">Забронировать</a>
-          </div>
-        </div>
-      </div>
-      <div class="found-houses-rating"><!-- блок с рейтингом отеля 3 звезды-->
-        <div class="found-rating-stars found-ratings-notgood"></div>
-        <p class="found-rating-info properties-black-h4">Рейтинг: 8,9</p>
-      </div>
-    </div>
-    <div class="found-houses clearfix">
-      <figure class="found-houses-img">
-        <img src="img/villas.jpg" alt="Villas at poco diablo">
-      </figure>
-      <div class="found-houses-info">
-        <a class="founf-info-title properties-black-h3" href="#">Villas at poco diablo</a>
-        <div class="found-about clearfix">
-          <!-- начало блок с типом отеля и ценой -->
-          <div class="found-about-houses">
-            <p class="found-houses-type properties-black-h4">Апартаменты</p>
-            <a class="found-houses-more" href="#">Подробнее</a>
-          </div>
-          <div class="found-about-book">
-            <p class="found-about-price properties-black-h4">от 2000 р.</p>
-            <a class="found-houses-btn" href="#">Забронировать</a>
-          </div>
-        </div>
-      </div>
-      <div class="found-houses-rating"><!-- блок с рейтингом отеля 2 звезды-->
-        <div class="found-rating-stars found-ratings-bad"></div><!-- как сделать звезды??? картинка со звездами или они меняют цвет при наведении hover и нажатии??? -->
-        <p class="found-rating-info properties-black-h4">Рейтинг: 9,2</p>
-      </div>
-    </div>
+  </div>
+</div>
+
+<!--ПРОБНЫЙ БЛОК С ОТЕЛЯМИ-->
+
+
+
+
+
+
+
+
+
+
+
+
+
   </main>
   <footer class="container">
     <p class="footer-hashtag properties-black-h3">#visitsedona</p>
