@@ -9,19 +9,26 @@
   <!--добавить ссылку на Стили-->
   <link rel="icon" href="#" type="image/x-icon">
   <!--добавить Фавикон-->
+</head>
   <body>
     <header class="container">
       <nav class="menu-navigator">
       <ul>
         <li><a class="menu-info properties-menu-black-h4" href="#">Информация</a></li>
         <li><a class="menu-info properties-menu-black-h4" href="#">Фото и видео</a></li>
-         <li><a class="menu-info properties-menu-black-h4" href="index.html" class="menu-logo"><img src="img/logo.png" alt=""></a></li><!--добавить картинку логотипа menu-logo.png-->
+         <li><a class="menu-info menu-logo properties-menu-black-h4" href="index.html"><img src="img/logo.png" alt=""></a></li><!--добавить картинку логотипа menu-logo.png-->
         <li><a class="menu-info properties-menu-black-h4" href="#">Карта штата</a></li>
         <li><a class="menu-info properties-menu-black-h4" href="catalog.html">Гостиницы</a></li>
       </ul>
     </header>
-    <main class="container">
-      <div class="filter clearfix">
+    <main class="container-hotels">
+    <!--НЕ МОГУ ВСТАВИТЬ БЭКГРАУНД В ФОРМУ!!!-->
+      <div class="background-filter">
+        <figure>
+          <img class="background-2" src="img/background-2-small.jpg" alt="Filter">
+        </figure>
+      </div>
+      <section class="filter clearfix">
         <form method="post" action="/">
           <div class="filter-infrastructure">
             <h3 class="filter-infrastructure-title">Инфраструктура</h3>
@@ -51,9 +58,10 @@
            <button class="filter-btn" type="submit">Показать
            </button>
          </div>
-       </form>
-     </div>
-     <div class="search clearfix"><!-- блок с сортировкой и стреклками-->
+        </form>
+      </section>
+      <!-- блок с сортировкой и стреклками-->
+      <div class="search clearfix">
       <div class="search-left-size">
         <span class="search-found properties-black-h3">Найдено: 3</span>
         <span class="search-sorting">Сортировка:</span>
@@ -67,11 +75,13 @@
         <a class="search-down" href="#"></a>
       </div>
     </div>
+    <!--блок с найдеными результатами -->
     <div class="found"><!--блок с найдеными результатами -->
       <div class="found-houses clearfix">
         <figure class="found-houses-img">
-          <img src="img/amara.jpg" alt="Amara resort & spa">
+          <img src="img/amara-resort.jpg" alt="Amara resort & spa">
         </figure>
+      </div>
         <div class="found-houses-info">
           <a class="founf-info-title properties-black-h3" href="#">Amara resort & spa</a>
           <div class="found-about clearfix"><!-- начало блок с типом отеля и ценой -->
@@ -87,7 +97,7 @@
         </div>
       </div>
       <div class="found-houses-rating"><!-- блок с рейтингом отеля 4 звезды-->
-        <div class="found-rating-stars found-ratings-good"></div> -->
+        <div class="found-rating-stars found-ratings-good"></div>
         <p class="found-rating-info properties-black-h4">Рейтинг: 8,5</p>
       </div>
     </div>

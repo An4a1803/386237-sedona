@@ -1,13 +1,19 @@
-/*1. прописываем стили для body, h1, h2- по классам */
 body {
-    background-color: #AC9C9C;
-    /*Серый заменить на белый (пока чтоб было видно буквы) */
+    background-color: #f2f2f2;
+    /*заменить на белый (пока чтоб было видно) */
     font-size: 14px;
     color: #000;
     line-height: 21px;
     font-weight: bold;
     font-family: "PT Sans", "Sample", "sans-serif";
     text-transform: uppercase;
+    display:block;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 h2 {
@@ -55,69 +61,223 @@ h2 {
 
 header.container {
     width: 1200px;
-    background: #ab2635;
+    min-height: 56px;
+    max-height: 134px;
+    background: #fff;
     margin: -10px auto;
 }
 
-/*ВОПРОС 1. Как расположить лого высотой 70пикс в хедере высостой 56 ???*/
 main.container {
     width: 1200px;
-    background: #552635;
+    background: #abc635;
     margin: -20px auto;
 }
-/*ВОПРОС 1.*/
 
-/*ВОПРОС 2. Как сделать навигатор и ссылки? Чтобы логотип вылезал немного вниз/
-И все ссылки расположить в одну строку?
-...*/
-nav {
+.menu-navigatior {
     width: 1200px;
-    background: #999635;
-    margin: 0px auto;
-    float: left;
-}
-
-.menu {
-    width: 1200px;
+    min-height: 56px;
     background: #C17AA1;
+    margin: 0px auto;
 }
 
-li {
-    width: 236px;
-    max-height: 56px;
-    margin-left: 0px;
-    margin-right: 0px;
-    float: left;
-    margin-top: 0px;
-
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
 }
-/*ВОПРОС 2*/
+
+
+.menu-logo {
+    position: absolute;
+}
+
+.card-sedona {
+    margin-left: -40px;
+    background: url(img/background-1.jpg);
+}
 
 .card-welcome {
     position: absolute;
     width: 460px;
-    margin-top: 332px;
+    margin-top: 78px;
     margin-left: 350px;
 }
 
-/*ВОПРОС 3. Как расположить картинку под меню как в макете? Абсолютом??*/
-.card-sedona {
-    /*height: 508;*/
-    margin-left: -40px;
-    margin-top: 0px;
+/*НАЧАЛО Секция с СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК*/
+.about {
+    width: 1200px;
+    height: 215px;
+    background: #fff;
+    margin-top: -26px;
 }
-/*ВОПРОС 3*/
+/*КОНЕЦ Секция с СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК*/
+
+/*НАЧАЛО Секция с НАСТОЯЩИЙ ГОРОДОК*/
+.city-description {
+    width: 400px;
+    height: 256px;
+    background: #81b3d2;
+    margin-top: 0px;
+    float: left;
+}
+
+.city-sedona {
+    width: 800px;
+    height: 256px;
+    background: url(img/pic-real-city.jpg);
+    margin-left: -40px;
+    margin-top: -14px;
+    float: left;
+}
+/*КОНЕЦ Секция с НАСТОЯЩИЙ ГОРОДОК*/
+
+/*НАЧАЛО Секция с ЖИЛЬЕ ЕДА СУВЕНИРЫ*/
+.pluses-block {
+    width: 400px;
+    height: 330px;
+    float: left;
+    background: #fff;
+}
+/*КОНЕЦ Секция с НАСТОЯЩИЙ ГОРОДОК*/
+
+/*НАЧАЛО Секция с НЕБОЛЬШАЯ ПЛОЩАДЬ*/
+.roсks-pic {
+    width: 800px;
+    height: 256px;
+    background: url(img/pic-devil-bridge.jpg);
+    margin-left: -40px;
+    margin-top: -14px;
+    float: left;
+}
+
+.roсks-description {
+    width: 400px;
+    height: 256px;
+    background: #81b3d2;
+    margin-top: 0px;
+    float: right;
+}
+/*КОНЕЦ Секция с НЕБОЛЬШАЯ ПЛОЩАДЬ*/
+
+/*НАЧАЛО Секция с КРАСИВАЯ ДОРОГА МАЛО ТУРИСТОВ*/
+.pluses-block-1 {
+    width: 400px;
+    height: 256px;
+    float: left;
+    background: #eeeeee;
+}
+/*КОНЕЦ Секция с КРАСИВАЯ ДОРОГА МАЛО ТУРИСТОВ*/
+
+
+/*НАЧАЛО ОТЕЛИ*/
+main.container-hotels {
+    width: 1200px;
+    background: #f2f2f2;
+    margin: 0px auto;
+}
+
+/*НАЧАЛО форма с фильтром жилья*/
+
+/*не могу вставить рисунок на бэке формы!!!*/
+.filter {
+    width: 1200px;
+    height: 216px;
+    margin: 0px auto;
+    /*background: url("img/background-2-small.jpg");*/
+}
+
+.filter-infrastructure {
+    width: 300px;
+    height: 154px;
+    float: left;
+}
+
+.filter-houses {
+    width: 300px;
+    height: 154px;
+    float: left;
+}
+
+
+.filter-price {
+    width: 318px;
+    height: 154px;
+    float: right;
+    margin-right: -72px;
+}
+
+.background-filter {
+    width: 1200px;
+    height: 216px;
+    background: url("img/background-2-small.jpg");
+    margin: -15px -40px;
+}
+/*КОНЕЦ форма с фильтром жилья*/
+
+/*НАЧАЛО секция с сылками найдень и т.п.*/
+.search-left-size {
+    /*display: inline-block;*/
+    background: #fff;
+    width: 1200px;
+    height: 88px;
+}
+
+.search-found {
+    width: 186px;
+    display: inline-block;
+}
+
+.search-sorting {
+    width: 126px;
+    display: inline-block;
+}
+
+.search-select {
+    width: 96px;
+    display: inline-block;
+}
+
+            /*блок со стрелками*/
+.search-right-size {
+
+}
+            /*блок со стрелками*/
+/*КОНЕЦ секция с сылками найден и т.п.*/
+
+/*НАЧАЛО секция с отелями*/
+.found-houses {
+    width: 217px;
+    height: 154px;
+    background: #fff;
+    margin-top: 2px;
+    padding: 31px auto;
+    float: left;
+}
+
+.found-houses-info {
+    width: 260px;
+    height: 154px;
+    background: #fff;
+    margin-top: 2px;
+    padding: 31px 0px;
+    float: left;
+}
+
+
+/*КОНЕЦ секция с отелями*/
+
+
+/*КОНЕЦ ОТЕЛИ*/
 
 
 
 
-
-footer.container {
+/*footer.container {
     width: 1200px;
     background: #359845;
     margin: -21px auto;
 
-}
+}*/
 
 
 
