@@ -181,7 +181,6 @@ main.container-hotels {
 /*не могу вставить рисунок на бэке формы!!!*/
 .filter {
     width: 1200px;
-    height: 216px;
     margin: 0px auto;
     background: url("../img/background-2-small.jpg");
 
@@ -207,11 +206,7 @@ main.container-hotels {
     margin-right: -72px;
 }
 
-.background-filter {
-    width: 1200px;
-    height: 216px;
-    background: url("../img/background-2-small.jpg");
-    margin: 10px auto;
+
 /*КОНЕЦ форма с фильтром жилья*/
 
 /*НАЧАЛО секция с сылками найдень и т.п.*/
@@ -246,17 +241,17 @@ main.container-hotels {
 /*КОНЕЦ секция с сылками найден и т.п.*/
 
 /*НАЧАЛО секция с отелями*/
-.found {
+.found {        /*--общий для всех блоков*/
     width: 1200px;
-    height: 155px;
+    height: 150px;
     margin: 0px;
     padding: 0px;
     background: #fff;
 }
 
-.found-houses {
+.found-houses {  /*--общий для блока с рисунком и отелем*/
     width: 600px;
-    /*float: left;*/
+    float: left;
 }
 
 .found-houses-img {
@@ -264,40 +259,70 @@ main.container-hotels {
     float: left;
 }
 
-.found-houses-all {
-    width: 268px;
+.found-houses-all { /*--общий для отеля, гостиницей. ценой*/
+    width: 369px;
     height: 148px;
+    margin: 0px;
+    float: left;
 }
 
-.found-houses-info {
-    width: 265px;
+.found-houses-info { /*--блок с названием отеля*/
+    width: 269px;
     height: 50px;
     float: left;
 }
 
-.found-about {
-    width: 265px;
-    height: 50px;
+.found-about { /*--блок с гостиницей и 4000р*/
+    width: 269px;
+    height: 46px;
     float: left;
 }
 
-.found-houses-type {
-    width: 120px;
-    height: 50px;
-    /*display: inline-block;*/
-    /*float: left;*/
+.found-houses-type { /*--блок с гостиницей*/
+    width: 134px;
+    float: left;
 }
 
-.found-houses-price {
-    width: 120px;
-    height: 50px;
-    /*display: inline-block;*/
-    /*float: left;*/
+.found-houses-price { /*--блок с ценой*/
+    width: 134px;
+    float: right;
 }
 
-.found-button
+.found-button { /*--блок с кнопками подробнее и забронировать*/
+    width: 269px;
+    float: left;
+}
 
+.found-button-type-1 {
+    width: 118px;
+    float: left;
+}
 
+.found-button-type-2 {
+   width: 150px
+}
+
+.rating {
+    width: 599px;
+    float: right;
+    margin: 0px;
+}
+
+.rating-stars {
+    height: 75px;
+    float: right;
+    margin-right: 73px;
+}
+
+.rating-number {
+    width: 112px;
+    height: 28px;
+    background: #f2f2f2;
+    float: right;
+    margin-right: -90px;
+    margin-top: 50px;
+    text-align: right;
+}
 
 /*КОНЕЦ секция с отелями*/
 
