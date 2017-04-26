@@ -183,6 +183,8 @@ main.container-hotels {
     width: 1200px;
     height: 216px;
     margin: 0px auto;
+    background: url("../img/background-2-small.jpg");
+
 }
 
 .filter-infrastructure {
@@ -208,7 +210,7 @@ main.container-hotels {
 .background-filter {
     width: 1200px;
     height: 216px;
-    background: url("img/background-2-small.jpg");
+    background: url("../img/background-2-small.jpg");
     margin: 10px auto;
 /*КОНЕЦ форма с фильтром жилья*/
 
