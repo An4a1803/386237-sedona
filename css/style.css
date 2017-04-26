@@ -243,7 +243,7 @@ main.container-hotels {
 /*НАЧАЛО секция с отелями*/
 .found {        /*--общий для всех блоков*/
     width: 1200px;
-    height: 150px;
+
     margin: 0px;
     padding: 0px;
     background: #fff;
@@ -312,6 +312,7 @@ main.container-hotels {
     height: 75px;
     float: right;
     margin-right: 73px;
+
 }
 
 .rating-number {
@@ -321,7 +322,7 @@ main.container-hotels {
     float: right;
     margin-right: -90px;
     margin-top: 50px;
-    text-align: right;
+    /*vertical-align: center;*/
 }
 
 /*КОНЕЦ секция с отелями*/
