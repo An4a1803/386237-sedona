@@ -92,16 +92,19 @@ ul {
     position: absolute;
 }
 
+
+.card-welcome-sedona {
+    margin: 0 auto;
+}
+
 .card-sedona {
-    margin-left: -40px;
     background: url(img/background-1.jpg);
 }
 
 .card-welcome {
     position: absolute;
     width: 460px;
-    margin-top: 78px;
-    margin-left: 350px;
+
 }
 
 /*НАЧАЛО Секция с СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК*/
@@ -122,12 +125,14 @@ ul {
     float: left;
 }
 
+.city-view {
+    margin: 0 auto;
+}
+
 .city-sedona {
     width: 800px;
     /*height: 256px;*/
     background: url(img/pic-real-city.jpg);
-    margin-left: -40px;
-    margin-top: -14px;
     float: left;
 }
 /*КОНЕЦ Секция с НАСТОЯЩИЙ ГОРОДОК*/
@@ -146,16 +151,17 @@ ul {
     width: 800px;
     /*height: 256px;*/
     background: url(img/pic-devil-bridge.jpg);
-    margin-left: -40px;
-    margin-top: -14px;
     float: left;
+}
+
+.roсks-view {
+    margin: 0 auto;
 }
 
 .roсks-description {
     width: 400px;
     /*height: 256px;*/
     background: #81b3d2;
-    margin-top: 0px;
     float: right;
 }
 /*КОНЕЦ Секция с НЕБОЛЬШАЯ ПЛОЩАДЬ*/
