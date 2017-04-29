@@ -11,14 +11,15 @@
 </head>
   <body>
     <header>
-      <nav class="menu-navigator">
+      <nav class="menu-navigator clearfix">
       <ul>
-        <li><a class="menu-info properties-menu-black-h4" href="#">Информация</a></li>
-        <li><a class="menu-info properties-menu-black-h4" href="#">Фото и видео</a></li>
-         <li><a class="menu-info menu-logo properties-menu-black-h4" href="index.html"><img src="img/logo.png" alt="Sedona-hotels"></a></li>
-        <li><a class="menu-info properties-menu-black-h4" href="#">Карта штата</a></li>
-        <li><a class="menu-info properties-menu-black-h4" href="catalog.html">Гостиницы</a></li>
+        <li><a href="#">Информация</a></li>
+        <li><a href="#">Фото и видео</a></li>
+         <li><a class="menu-logo" href="index.html"><img src="img/logo.png" alt=""></a></li><!--добавить картинку логотипа menu-logo.png-->
+        <li><a href="#">Карта штата</a></li>
+        <li><a href="hotels.html">Гостиницы</a></li>
       </ul>
+    </nav>
     </header>
     <main class="hotels">
       <div class="background-filter">
@@ -52,7 +53,7 @@
            <button class="filter-btn" type="submit">Показать
            </button>
          </div>
-          </form>
+        </form>
         </section>
       </div>
       <!-- блок с сортировкой и стреклками-->
@@ -93,7 +94,7 @@
             <div class="found-button-type-1"><!--(блок с кнопками подробнее)-->
               <a class="found-button-more" href="#">Подробнее</a>
             </div><!--(блок с кнопками подробнее)-->
-            <div class=" found-button-type2"><!--(блок с кнопками забронировать)-->
+            <div class="found-button-type2"><!--(блок с кнопками забронировать)-->
               <a class="found-button-book" href="#">Забронировать</a>
             </div><!--(блок с кнопками забронировать)-->
           </div><!--(блок с кнопками подробнее и забронировать)-->
@@ -189,17 +190,22 @@
 <!--КОНЕЦ БЛОК С ОТЕЛЕМ VILLAS AT POCO-->
 
   </main>
+
   <footer>
-    <p class="footer-hashtag properties-black-h3">#visitsedona</p>
-    <div class="footer-social">
-    <a class="footer-social-btn footer-social-twitter" href="#">Твиттер</a><!-- иконка твиттера png-->
-      <a class="footer-social-btn footer-social-facebook" href="#">ВКонтакте</a><!-- иконка контакта png-->
-      <a class="footer-social-btn footer-social-youtube" href="#">Ютуб</a><!-- иконка ютуба png-->
+    <div class="container clearfix">
+      <section class="link-first">
+        <a class="hashtag properties-black-h3">#visitsedona</p>
+      </section>
+      <section class="link-second">
+        <a class="social-btn social-btn-twitter" href="https://twitter.com/">Twitter</a><!-- иконка твиттера png-->
+        <a class="social-btn social-btn-facebook" href="https://www.facebook.com/">Facebook</a><!-- иконка контакта png-->
+        <a class="social-btn social-btn-youtube" href="http://www.youtube.com/">Youtube</a><!-- иконка ютуба png-->
+      </section>
+      <section class="link-third">
+        <p>Разработано:</p>
+        <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+      </section>
     </div>
-    <!-- <div class="footer-htmlacademy">
-      <span class="footer-website-by">Website by</span>
-      <img src="img/html-academy.png" alt="HTMLacademy">
-    </div> -->
   </footer>
  </body>
 </html>

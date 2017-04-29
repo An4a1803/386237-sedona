@@ -11,6 +11,7 @@ body {
     display:block;
 }
 
+/*НАЧАЛО основные свойства боди*/
 .clearfix::after {
   content: "";
   display: table;
@@ -59,69 +60,122 @@ h2 {
     text-transform: uppercase;
     text-decoration: none;
 }
+/*КОНЕЦ основные свойства боди*/
 
+/*НАЧАЛО ХЕДЕР*/
 header {
     width: 1200px;
-    /*min-height: 56px;
-    max-height: 134px;*/
-    background: #fff;
-    margin: -10px auto;
-}
-
-main {
-    width: 1200px;
-    background: #abc635;
-    margin: -20px auto;
-}
-
-.menu-navigatior {
-    width: 1200px;
-    /*min-height: 56px;*/
-    background: #C17AA1;
-    margin: 0px auto;
-}
-
-ul {
-    margin: 0px;
-    padding: 0px;
-    list-style-type: none;
-}
-
-
-.menu-logo {
-    position: absolute;
-}
-
-
-.card-welcome-sedona {
     margin: 0 auto;
 }
 
-.card-sedona {
+.menu-navigator {
+    float: left;
+    width: 1200px;
+    margin: 0px auto;
+    background: #fff;
+}
+
+.menu-navigator a {
+    color: #000;
+    text-decoration: none;
+    display: block;
+    padding: 15px 70px;
+}
+
+a.menu-logo {
+    position: absolute;
+    margin: -15px auto;
+
+}
+
+li:nth-child(5) {
+    float: right;
+}
+
+li:nth-child(4) {
+    float: right;
+}
+
+
+.menu-navigator ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.menu-navigator li {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 25px;
+    vertical-align: top;
+}
+
+.menu-navigator a:hover {
+  color: #81b3d2;
+}
+
+.menu-navigator a:active {
+  color: #eee;
+}
+
+.menu-navigator a: .... {  /*как сделать цвет для ссылки активной, т.е. находимся на странице???*/
+  color: #766357;
+}
+
+/*КОНЕЦ ХЕДЕР*/
+
+/*НАЧАЛО MAIN*/
+main {
+    width: 1200px;
+    background: #f2f2f2;
+    margin: 0 auto;
+}
+
+.card-welcome-sedona {
+    margin: 0 auto;
     background: url(img/background-1.jpg);
 }
 
+/*.card-sedona {
+    background: url(img/background-1.jpg);
+}*/
+
 .card-welcome {
     position: absolute;
-    width: 460px;
+    width: 460px;   /*как задать полозение по центру надприси? Обернуть в блок + :before ???*/
 
 }
 
 /*НАЧАЛО Секция с СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК*/
 .about {
     width: 1200px;
-    /*height: 215px;*/
     background: #fff;
-    margin-top: -26px;
+    margin: 0 auto;
+    padding-top: 65px;
+    padding-bottom: 56px;
+}
+
+.align {
+    width: 495px;
+    margin: 0 auto;
+    text-align: center;
 }
 /*КОНЕЦ Секция с СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК*/
 
 /*НАЧАЛО Секция с НАСТОЯЩИЙ ГОРОДОК*/
+.city {
+    width: 1200px;
+    height: 257px;  /*разобраться с высотой px или %*/
+    margin: 0;
+    padding: 0;
+    /*background: #eeeeee;*/
+}
+
 .city-description {
     width: 400px;
-    /*height: 256px;*/
+    height: 100%;
     background: #81b3d2;
-    margin-top: 0px;
+    margin: 0 auto;
     float: left;
 }
 
@@ -131,22 +185,36 @@ ul {
 
 .city-sedona {
     width: 800px;
-    /*height: 256px;*/
     background: url(img/pic-real-city.jpg);
     float: left;
 }
 /*КОНЕЦ Секция с НАСТОЯЩИЙ ГОРОДОК*/
 
 /*НАЧАЛО Секция с ЖИЛЬЕ ЕДА СУВЕНИРЫ*/
+.pluses-1 {
+    width: 1200px;
+    height: 335px;
+    margin: 0;
+    padding: 0;
+    /*background: #eeeeee;*/
+}
+
 .pluses-block {
     width: 400px;
-    /*height: 330px;*/
+    height: 100%;   /*разобраться с высотой px или %*/
     float: left;
     background: #fff;
 }
 /*КОНЕЦ Секция с НАСТОЯЩИЙ ГОРОДОК*/
 
-/*НАЧАЛО Секция с НЕБОЛЬШАЯ ПЛОЩАДЬ*/
+.roсks {
+    width: 1200px;
+    height: 257px;
+    margin: 0;
+    padding: 0;
+    background: #eeeeee;
+}
+
 .roсks-pic {
     width: 800px;
     /*height: 256px;*/
@@ -160,27 +228,43 @@ ul {
 
 .roсks-description {
     width: 400px;
-    /*height: 256px;*/
+    height: 100%;   /*разобраться с высотой px или %*/
     background: #81b3d2;
     float: right;
 }
-/*КОНЕЦ Секция с НЕБОЛЬШАЯ ПЛОЩАДЬ*/
+
 
 /*НАЧАЛО Секция с КРАСИВАЯ ДОРОГА МАЛО ТУРИСТОВ*/
+
+.pluses-2 {
+    width: 1200px;
+    height: 255px;
+    margin: 0;
+    padding: 0;
+    background: #eeeeee;
+    text-align: center;
+}
+
 .pluses-block-1 {
     width: 400px;
-    /*height: 256px;*/
     float: left;
-    background: #eeeeee;
 }
+
+
+
+
+
 /*КОНЕЦ Секция с КРАСИВАЯ ДОРОГА МАЛО ТУРИСТОВ*/
+
+
+
 
 
 /*НАЧАЛО ОТЕЛИ*/
 main.hotels {
     width: 1200px;
     background: #f2f2f2;
-    margin: 0px auto;
+    margin: 0 auto;
 }
 
 /*НАЧАЛО форма с фильтром жилья*/
@@ -188,7 +272,7 @@ main.hotels {
 /*не могу вставить рисунок на бэке формы!!!*/
 .filter {
     width: 1200px;
-    margin: 0px auto;
+    margin: 0 auto;
     background: url("../img/background-2-small.jpg");
 
 }
@@ -210,7 +294,7 @@ main.hotels {
     width: 318px;
     /*height: 154px;*/
     float: right;
-    margin-right: -72px;
+    margin: 0 auto;
 }
 
 
@@ -250,7 +334,7 @@ main.hotels {
 /*НАЧАЛО секция с отелями*/
 .found {        /*--общий для всех блоков*/
     width: 1200px;
-    margin: 0px;
+    margin: 2px;
     padding: 0px;
     background: #fff;
 }
@@ -267,20 +351,17 @@ main.hotels {
 
 .found-houses-all { /*--общий для отеля, гостиницей. ценой*/
     width: 369px;
-    /*height: 148px;*/
     margin: 0px;
     float: left;
 }
 
 .found-houses-info { /*--блок с названием отеля*/
     width: 269px;
-    /*height: 50px;*/
     float: left;
 }
 
 .found-about { /*--блок с гостиницей и 4000р*/
     width: 269px;
-    /*height: 46px;*/
     float: left;
 }
 
@@ -305,50 +386,143 @@ main.hotels {
 }
 
 .found-button-type-2 {
-   width: 150px
+   width: 150px;
+   float: left;
 }
 
 .rating {
-    width: 599px;
+    width: 110px;
     float: right;
-    margin: 0px;
+    margin: 0;
+    padding: 0;
+
 }
 
 .rating-stars {
-    /*height: 75px;*/
     float: right;
     margin-right: 73px;
-
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .rating-number {
-    width: 112px;
-    /*height: 28px;*/
+    width: 110px;
     background: #f2f2f2;
     float: right;
-    margin: 50px -90px;
-    /*vertical-align: center;*/
+    margin-right: 73px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 /*КОНЕЦ секция с отелями*/
 
-.booking {
+/*НАЧАЛО секция с формой*/
+.interest-blok {
     width: 1200px;
-    /*height: 295px;*/
+    background: #fff;
+    padding-top: 60px;
+}
+
+.booking-title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.align-1 {
+    width: 430px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 60px;
+
+}
+
+.search-form-link {
+    width: 565px;
+    height: 85px;
+    background: #766357;
+    /*padding-top: 24px;*/
+    margin: 0 auto;
+
+}
+
+.search-form-book {
+    width: 565px;
+    height: 480px;
+    margin: 0 auto;
     background: #fff;
 }
 
+
+
+
+
+/*КОНЕЦ секция с формой*/
+
+
+/*НАЧАЛО секция с КАРТОЙ*/
 iframe {
     width: 100%;
     height: 470px;
     border: 0px;
 }
+/*КОНЕЦ секция с КАРТОЙ*/
 
+/*НАЧАЛО секция с ФУТЕРОМ*/
 footer {
     width: 1200px;
+    max-height: 120px;
     background: #fff;
     margin: 0px auto;
+    padding-top: 48px;
+    padding-bottom: 48px;
 }
 
+.link-first {
+    float: left;
+    width: 400px;
+    /*margin: 20px auto;*/
+    text-align: center;
+}
 
+.link-second {
+    float: left;
+    width: 400px;
+    margin: 0px auto;
+    text-align: center;
+}
 
+.link-third {
+    float: right;
+    width: 400px;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.hashtag {
+    line-height: 26px;
+}
+
+.social-btn {
+    display: inline-block;
+    width: 43px;
+    height: 43px;
+    margin: 0 2px;
+    font-size: 0;
+    vertical-align: top;
+    text-decoration: none;
+}
+
+.social-btn-twitter {
+    background: #81b3d2 url("../img/twitter.png") no-repeat center;
+}
+
+.social-btn-facebook {
+    background: #81b3d2 url("../img/facebook.png") no-repeat center;
+}
+
+.social-btn-youtube {
+    background: #81b3d2 url("../img/youtube.png") no-repeat center;
+}
+
+/*КОНЕЦ ФУТЕРА*/

@@ -5,6 +5,7 @@
   <title>Главная страница - Седона</title>
   <meta name="description" content="Отдых в Седоне. Спокойный отдых вдали от суеты, без скопления туристов. Тихие мотели, вскусная еда и сувениры">
   <meta name="keywords" content="отдых в Аризоне, Аризона, Седона, мотель, отель, гостиница, апартаменты, вилла, бассейн, спа, мост дьявола, туризм, отдых"> <!--добавить контент на английском-->
+
   <link rel="stylesheet" href="css/style.css">
   <!--добавить ссылку на Стили-->
   <link rel="icon" href="#" type="image/x-icon">
@@ -12,13 +13,13 @@
 </head>
 <body>
   <header>
-    <nav class="menu-navigator">
+    <nav class="menu-navigator clearfix">
       <ul>
-        <li><a class="menu-info properties-menu-black-h4" href="#">Информация</a></li>
-        <li><a class="menu-info properties-menu-black-h4" href="#">Фото и видео</a></li>
-         <li><a class="menu-info menu-logo properties-menu-black-h4" href="index.html"><img src="img/logo.png" alt=""></a></li><!--добавить картинку логотипа menu-logo.png-->
-        <li><a class="menu-info properties-menu-black-h4" href="#">Карта штата</a></li>
-        <li><a class="menu-info properties-menu-black-h4" href="catalog.html">Гостиницы</a></li>
+        <li><a href="#">Информация</a></li>
+        <li><a href="#">Фото и видео</a></li>
+         <li><a class="menu-logo" href="index.html"><img src="img/logo.png" alt=""></a></li><!--добавить картинку логотипа menu-logo.png-->
+        <li><a href="#">Карта штата</a></li>
+        <li><a href="hotels.html">Гостиницы</a></li>
       </ul>
     </nav>
   </header>
@@ -30,9 +31,11 @@
       </figure>
     </div>
     <!-- /*ВСТАВИТЬ ГЕОМ ФИГУРУ НАД СЕКЦИЕЙ!!!-->
-    <section class="about clearfix"><!--блок с описанием седоны-->
-      <h3 class="about-1 properties-black-h3">Cедона — небольшой городок в аризоне, заслуживающий большего!</h3>
-      <h4 class="about-2 properties-black-h4">Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон!</h4>
+    <section class="about"><!--блок с описанием седоны-->
+      <div class="align">
+        <h3 class="about-1 properties-black-h3">Cедона — небольшой городок в аризоне, заслуживающий большего!</h3>
+        <h4 class="about-2 properties-black-h4">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</h4>
+      </div>
     </section>
     <section class="city clearfix"><!--блок Настоящий городок с картинкой-->
       <div class="city-description">
@@ -46,7 +49,7 @@
         </figure>
       </div>
     </section>
-    <section class="pluses clearfix"><!-- блок с жильем, едой, сувенирами -->
+    <section class="pluses-1 clearfix"><!-- блок с жильем, едой, сувенирами -->
       <div class="pluses-block pluses-housing">
         <img src="img/house.png">
         <h3 class="properties-black-h3">Жилье</h3>
@@ -76,7 +79,7 @@
         <p class="properties-white-h4">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
       </div>
     </section>
-    <section class="pluses pluses-attraction"><!-- блоки Площадь, Дорога, туристы -->
+    <section class="pluses-2 pluses-attraction"><!-- блоки Площадь, Дорога, туристы -->
       <div class="pluses-block-1 pluses-number pluses-square">
         <h3 class="properties-black-h3">Небольшая площадь</h3>
         <p class="pluses-block-subtitle properties-black-h4">-№3-</p>
@@ -93,15 +96,21 @@
         <p class="pluses-block-about properties-black-h4">Большинство едет в Гранд Каньон и толпится там</p>
       </div>
     </section>
+
     <!-- НАЧАЛО БЛОКА С ФОРМОЙ ПОИСКА И БРОНИ-->
-    <section class="interest-blok">
-      <div class="booking">
+    <section class="interest-blok clearfix">
+      <div class="align-1">
         <h2 class="booking-title">Заинтересовались?</h2>
         <p class="booking-info properties-black-h4">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+      </div>
+      <div class="search-form-link">
         <a class="search-btn" href="#">Поиск гостиницы в седоне</a>
       </div>
     </section>
-    <section class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.180521662296!2d-111.83024383534357!3d34.85437335639766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNg!5e0!3m2!1sru!2s!4v1493279104759" allowfullscreen>
+    </iframe>
+
+      <section class="search-form-book">
       <form method="post" action="/search">
         <label class="booking-arrive" for="booking-arrive-date">Дата заезда:
           <a class="arrive-cal" href="#"><span class="icon-calendar"></span></a>
@@ -124,24 +133,29 @@
         </div>
         <button class="booking-form-btn" type="submit">Найти</button>
       </form>
-    </section>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.180521662296!2d-111.83024383534357!3d34.85437335639766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNg!5e0!3m2!1sru!2s!4v1493279104759" allowfullscreen>
-    </iframe>
+      </section>
+
+
+
     <!-- КОНЕЦ БЛОКА С ФОРМОЙ БРОНИ -->
 
 
   </main>
-  <footer><!-- футер - соцсети -->
-    <p class="footer-hashtag properties-black-h3">#visitsedona</p>
-    <div class="footer-social">
-      <a class="footer-social-btn footer-social-twitter" href="#">Твиттер</a><!-- иконка твиттера png-->
-      <a class="footer-social-btn footer-social-facebook" href="#">ВКонтакте</a><!-- иконка контакта png-->
-      <a class="footer-social-btn footer-social-youtube" href="#">Ютуб</a><!-- иконка ютуба png-->
+  <footer>
+    <div class="container clearfix">
+      <section class="link-first">
+        <a class="hashtag properties-black-h3">#visitsedona</p>
+      </section>
+      <section class="link-second">
+        <a class="social-btn social-btn-twitter" href="https://twitter.com/">Twitter</a><!-- иконка твиттера png-->
+        <a class="social-btn social-btn-facebook" href="https://www.facebook.com/">Facebook</a><!-- иконка контакта png-->
+        <a class="social-btn social-btn-youtube" href="http://www.youtube.com/">Youtube</a><!-- иконка ютуба png-->
+      </section>
+      <!-- <section class="link-third">
+        <p>Разработано:</p>
+        <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+      </section> -->
     </div>
-    <!-- <div class="footer-htmlacademy">
-      <span class="footer-website-by">Website by</span>
-      <img src="img/html-academy.png" alt="HTMLacademy">
-    </div> -->
   </footer>
  </body>
 </html>
