@@ -136,13 +136,9 @@ main {
     background: url(img/background-1.jpg);
 }
 
-/*.card-sedona {
-    background: url(img/background-1.jpg);
-}*/
-
 .card-welcome {
     position: absolute;
-    width: 460px;   /*как задать полозение по центру надприси? Обернуть в блок + :before ???*/
+    width: 460px;   /*как задать положение по центру надприси? Обернуть в блок + :before ???*/
 
 }
 
@@ -407,13 +403,19 @@ main.hotels {
 
 .rating-number {
     width: 110px;
+    height: 25px;
     background: #f2f2f2;
     float: right;
     margin-right: 73px;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+.rating-number p {
+    margin: 0 auto;
     text-align: center;
 }
+
 
 /*КОНЕЦ секция с отелями*/
 
@@ -462,7 +464,9 @@ main.hotels {
 
 /*НАЧАЛО секция с КАРТОЙ*/
 iframe {
-    width: 100%;
+    position: absolute;
+    margin: 0px auto;
+    width: 1200px;
     height: 470px;
     border: 0px;
 }
@@ -474,8 +478,8 @@ footer {
     max-height: 120px;
     background: #fff;
     margin: 0px auto;
-    padding-top: 48px;
-    padding-bottom: 48px;
+    padding-top: 40px;
+    padding-bottom: 30px;
 }
 
 .link-first {
@@ -526,3 +530,9 @@ footer {
 }
 
 /*КОНЕЦ ФУТЕРА*/
+
+
+
+
+
+
