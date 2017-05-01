@@ -173,15 +173,13 @@ img.card-sedona {
     width: 1200px;
     margin: 0 auto;
     padding: 0;
-    /*background: #eeeeee;*/
 }
 
 .city-description {
     width: 34%;
-    min-height: 155px;
     background: #81b3d2;
     margin: 0 auto;
-    padding: 53px 57px;
+    padding: 51px 57px;
     box-sizing: border-box;
     float: left;
     text-align: center;
@@ -190,53 +188,58 @@ img.card-sedona {
 .city-sedona {
     position: relative;
     width: 66%;
-    height: 255px;
+    height: 256px;
     background: url(../img/pic-real-city-full.jpg);
+    background-position: center;
     float: right;
+
 }
 /*КОНЕЦ Секция с НАСТОЯЩИЙ ГОРОДОК*/
 
 /*НАЧАЛО Секция с ЖИЛЬЕ ЕДА СУВЕНИРЫ*/
 .pluses-1 {
     width: 1200px;
-    /*height: 335px;*/
     margin: 0;
-    padding: 0;
-    /*background: #eeeeee;*/
-}
-
-.pluses-block {
-    width: 400px;
-    /*height: 100%;   разобраться с высотой px или %*/
-    float: left;
     background: #fff;
 }
+
+.pluses-block-1 {
+    width: 400px;
+    margin: 0 auto;
+    padding-top: 58px;
+    padding-bottom: 86px;
+    padding-left: 57px;
+    padding-right: 57px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+}
+
 /*КОНЕЦ Секция с НАСТОЯЩИЙ ГОРОДОК*/
 
 .roсks {
     width: 1200px;
-    /*height: 257px;*/
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
-    background: #eeeeee;
 }
 
 .roсks-pic {
-    width: 800px;
-    /*height: 256px;*/
-    background: url(img/pic-devil-bridge.jpg);
+    position: relative;
+    width: 66%;
+    height: 256px;
+    background: url(../img/pic-devil-bridge-full.jpg);
+    background-position: center;
     float: left;
 }
 
-.roсks-view {
-    margin: 0 auto;
-}
-
 .roсks-description {
-    width: 400px;
-    /*height: 100%;   разобраться с высотой px или %*/
+    width: 34%;
     background: #81b3d2;
+    margin: 0 auto;
+    padding: 51px 57px;
+    box-sizing: border-box;
     float: right;
+    text-align: center;
 }
 
 
@@ -244,40 +247,25 @@ img.card-sedona {
 
 .pluses-2 {
     width: 1200px;
-    /*height: 255px;*/
     margin: 0;
-    background: #eeeeee;
-    text-align: center;
-}
-
-.pluses-block-1 {
-    width: 400px;
-    float: left;
-    padding-top: 50px;
-    padding-bottom: 65px;
-    /*padding-right: 95px;*/
-    padding-left: 95px;
+    background: #f2f2f2;
 }
 
 .pluses-block-2 {
     width: 400px;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 55px;
+    padding-left: 75px;
+    padding-right: 60px;
+    box-sizing: border-box;
     float: left;
-    padding-top: 50px;
-    padding-bottom: 65px;
-    /*padding-right: 95px;*/
-    padding-left: 95px;
+    text-align: center;
 }
 
-.pluses-block-3 {
-    width: 400px;
+div.pluses-block-2:nth-child(3) {
     float: right;
-    padding-top: 50px;
-    padding-bottom: 65px;
-    /*padding-right: 95px;*/
-    padding-left: 95px;
 }
-
-
 
 
 
@@ -455,6 +443,7 @@ main.hotels {
     width: 1200px;
     background: #fff;
     padding-top: 60px;
+    padding-bottom: 140px;
 }
 
 .booking-title {
