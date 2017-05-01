@@ -1,5 +1,4 @@
 body {
-    min-width: 1200px;
     font-size: 14px;
     color: #000;
     line-height: 21px;
@@ -172,13 +171,13 @@ img.card-sedona {
 /*НАЧАЛО Секция с НАСТОЯЩИЙ ГОРОДОК*/
 .city {
     width: 1200px;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     /*background: #eeeeee;*/
 }
 
 .city-description {
-    width: 400px;
+    width: 34%;
     min-height: 155px;
     background: #81b3d2;
     margin: 0 auto;
