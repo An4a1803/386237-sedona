@@ -61,15 +61,16 @@ h2 {
 }
 /*КОНЕЦ основные свойства боди*/
 
+.container {
+    width: 1200px;
+}
 /*НАЧАЛО ХЕДЕР*/
 header {
     min-height: 56px;
-    width: 1200px;
     margin: 0 auto;
 }
 
 .menu-navigator {
-    width: 1200px;
     margin: 0px auto;
     background: #fff;
 }
@@ -125,7 +126,6 @@ li:nth-child(4) {
 
 /*НАЧАЛО MAIN*/
 main {
-    width: 1200px;
     background: #f2f2f2;
     margin: 0 auto;
 }
@@ -153,7 +153,6 @@ img.card-sedona {
 
 /*НАЧАЛО Секция с СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК*/
 .about {
-    width: 1200px;
     background: #fff;
     margin: 0 auto;
     padding-top: 65px;
@@ -170,7 +169,6 @@ img.card-sedona {
 
 /*НАЧАЛО Секция с НАСТОЯЩИЙ ГОРОДОК*/
 .city {
-    width: 1200px;
     margin: 0 auto;
     padding: 0;
 }
@@ -198,7 +196,6 @@ img.card-sedona {
 
 /*НАЧАЛО Секция с ЖИЛЬЕ ЕДА СУВЕНИРЫ*/
 .pluses-1 {
-    width: 1200px;
     margin: 0;
     background: #fff;
 }
@@ -218,7 +215,6 @@ img.card-sedona {
 /*КОНЕЦ Секция с НАСТОЯЩИЙ ГОРОДОК*/
 
 .roсks {
-    width: 1200px;
     margin: 0 auto;
     padding: 0;
 }
@@ -246,7 +242,6 @@ img.card-sedona {
 /*НАЧАЛО Секция с КРАСИВАЯ ДОРОГА МАЛО ТУРИСТОВ*/
 
 .pluses-2 {
-    width: 1200px;
     margin: 0;
     background: #f2f2f2;
 }
@@ -267,7 +262,6 @@ img.card-sedona {
 /*КОНЕЦ Секция с КРАСИВАЯ ДОРОГА МАЛО ТУРИСТОВ*/
 /*НАЧАЛО секция с формой*/
 .interest-blok {
-    width: 1200px;
     background: #fff;
     padding-top: 40px;
     padding-bottom: 60px;
@@ -275,7 +269,7 @@ img.card-sedona {
 }
 
 .align-1 {
-    width: 430px;
+    width: 450px;
     margin: 0 auto;
     text-align: center;
     line-height: 24px;
@@ -294,7 +288,7 @@ img.card-sedona {
 
 .modal-content {
     position: absolute;
-    bottom: -277px;
+    bottom: -272px;
     padding: 55px 55px;
     margin: 0px auto;
     width: 570px;
@@ -315,7 +309,7 @@ img.card-sedona {
 }
 
 
-form {
+form.form-index {
     width: 570px;
     padding: 55px 55px;
     margin: 0px auto;
@@ -329,8 +323,7 @@ form {
 /*НАЧАЛО секция с КАРТОЙ*/
 iframe {
     margin: 0px auto;
-    width: 1200px;
-    height: 470px;
+    height: 472px;
     border: 0px;
     vertical-align: middle;
 }
@@ -350,10 +343,8 @@ main.hotels {
 
 /*не могу вставить рисунок на бэке формы!!!*/
 .filter {
-    width: 1200px;
     margin: 0 auto;
     background: url("../img/background-2-small.jpg");
-
 }
 
 .filter-infrastructure {
@@ -373,30 +364,38 @@ main.hotels {
     margin: 0 auto;
 }
 
-
 /*КОНЕЦ форма с фильтром жилья*/
 
 /*НАЧАЛО секция с сылками найдень и т.п.*/
 
 .search-left-size {
-    /*display: inline-block;*/
+    padding: 30px 70px;
     background: #fff;
-    width: 1200px;
 }
 
 .search-found {
-    width: 186px;
+    width: 230px;
+    float: left;
     display: inline-block;
 }
 
 .search-sorting {
     width: 126px;
     display: inline-block;
+    font-size: 12px;
+    line-height: 18px;
 }
 
 .search-select {
-    width: 96px;
+    width: 95px;
+    font-size: 12px;
+    line-height: 18px;
+    color: #000;
+    opacity: 0.3;
+    text-decoration: none;
+    border-bottom: 1.5px dotted #81b3d2;
     display: inline-block;
+
 }
 
             /*блок со стрелками*/
@@ -408,10 +407,12 @@ main.hotels {
 
 /*НАЧАЛО секция с отелями*/
 .found {        /*--общий для всех блоков*/
-    width: 1200px;
-    margin: 2px;
-    padding: 0px;
+    /*width: 1200px;*/
+    margin: 0px;
+    border-top: 2px solid #f2f2f2;
+    padding: 30px 70px;
     background: #fff;
+    box-sizing: border-box;
 }
 
 .found-houses {  /*--общий для блока с рисунком и отелем*/
@@ -425,23 +426,23 @@ main.hotels {
 }
 
 .found-houses-all { /*--общий для отеля, гостиницей. ценой*/
-    width: 369px;
+    width: 370px;
     margin: 0px;
     float: left;
 }
 
 .found-houses-info { /*--блок с названием отеля*/
-    width: 269px;
+    width: 270px;
     float: left;
 }
 
 .found-about { /*--блок с гостиницей и 4000р*/
-    width: 269px;
+    width: 270px;
     float: left;
 }
 
 .found-houses-type { /*--блок с гостиницей*/
-    width: 134px;
+    width: 135px;
     float: left;
 }
 
@@ -469,24 +470,20 @@ main.hotels {
     width: 110px;
     float: right;
     margin: 0;
-    padding: 0;
+    /*padding: 30px 73px;*/
 
 }
 
 .rating-stars {
     float: right;
-    margin-right: 73px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
 }
 
 .rating-number {
     width: 110px;
     background: #f2f2f2;
     float: right;
-    margin-right: 73px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+
 }
 
 .rating-number p {
@@ -501,7 +498,6 @@ main.hotels {
 
 /*НАЧАЛО секция с ФУТЕРОМ*/
 footer {
-    width: 1200px;
     background: #fff;
     margin: 0px auto;
     padding-top: 40px;
@@ -568,11 +564,6 @@ footer {
 
 }
 
-/*.footer-HTMLacademy {
-    float: right;
-    text-align: center;
-    padding-right: 105px;
-}*/
 /*КОНЕЦ ФУТЕРА*/
 
 

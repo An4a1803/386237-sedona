@@ -5,13 +5,14 @@
   <title>Отели - Седоны</title>
   <meta name="description" content="Отдых в мотелях, гостиницах, апартаментах. Бассейн, парковка, wi-fi, завтрак, все включено.">
   <meta name="keywords" content="отдых в Аризоне, Аризона, Седона, мотель, отель, гостиница, апартаменты, вилла, бассейн, спа, мост дьявола, туризм, отдых">
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="#" type="image/x-icon">
   <!--добавить Фавикон-->
 </head>
   <body>
-    <header>
-      <nav class="menu-navigator clearfix">
+    <header class="container">
+      <nav class="menu-navigator container clearfix">
       <ul>
         <li><a href="#">Информация</a></li>
         <li><a href="#">Фото и видео</a></li>
@@ -21,9 +22,9 @@
       </ul>
     </nav>
     </header>
-    <main class="hotels">
+    <main class="hotels container">
       <div class="background-filter">
-        <section class="filter clearfix">
+        <section class="filter container clearfix">
           <form method="post" action="/">
           <div class="filter-infrastructure">
             <h3 class="filter-infrastructure-title">Инфраструктура</h3>
@@ -57,7 +58,7 @@
         </section>
       </div>
       <!-- блок с сортировкой и стреклками-->
-      <div class="search clearfix">
+      <div class="search container clearfix">
       <div class="search-left-size">
         <span class="search-found properties-black-h3">Найдено: 3</span>
         <span class="search-sorting">Сортировка:</span>
@@ -191,10 +192,10 @@
 
   </main>
 
-  <footer>
+  <footer class="container">
     <div class="container clearfix">
       <section class="link-first">
-        <a class="hashtag properties-black-h3">#visitsedona</p>
+        <a class="hashtag properties-black-h3" href="#">#visitsedona</p>
       </section>
       <section class="link-second">
         <a class="social-btn social-btn-twitter" href="https://twitter.com/">Twitter</a><!-- иконка твиттера png-->
@@ -202,7 +203,9 @@
         <a class="social-btn social-btn-youtube" href="http://www.youtube.com/">Youtube</a><!-- иконка ютуба png-->
       </section>
       <section class="link-third">
-        <p class="btn"">HTML Academy</p>
+        <a class="html-ac" href="https://htmlacademy.ru/intensive/htmlcss">
+          <img src="img/html-academy.png" alt="HTMLacademy">
+        </a>
       </section>
     </div>
   </footer>
