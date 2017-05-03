@@ -344,7 +344,15 @@ main.hotels {
 /*не могу вставить рисунок на бэке формы!!!*/
 .filter {
     margin: 0 auto;
+    padding: 0;
     background: url("../img/background-2-small.jpg");
+}
+
+.filter-inf-house {
+    width: 600px;
+    margin: 0 auto;
+    float: left;
+    padding: 30px 70px;
 }
 
 .filter-infrastructure {
@@ -354,7 +362,7 @@ main.hotels {
 
 .filter-houses {
     width: 300px;
-    float: left;
+    float: right;
 }
 
 
@@ -367,11 +375,6 @@ main.hotels {
 /*КОНЕЦ форма с фильтром жилья*/
 
 /*НАЧАЛО секция с сылками найдень и т.п.*/
-
-.search-left-size {
-    padding: 30px 70px;
-    background: #fff;
-}
 
 .search-found {
     width: 230px;
@@ -386,17 +389,44 @@ main.hotels {
     line-height: 18px;
 }
 
-.search-select {
-    width: 95px;
+.search-left-size {
+    padding: 30px 70px;
+    background: #fff;
+}
+
+.search-left-size a {
+    display: inline-block;
+    width: 75px;
+    padding-right: 30px;
     font-size: 12px;
     line-height: 18px;
     color: #000;
-    opacity: 0.3;
+    text-align: center;
     text-decoration: none;
-    border-bottom: 1.5px dotted #81b3d2;
-    display: inline-block;
-
+    opacity: 0.3;
 }
+
+a.search-price, a.search-type {
+    width: 50px;
+}
+
+a.search-select:after {
+    content: '';
+    display: block;
+    width: 100%;
+    opacity: 1;
+    border-bottom: 2px dotted #81b3d2;
+}
+
+a.search-select:hover {
+  color: #81b3d2;
+}
+
+a.search-select:active:after {
+  color: #000;
+  opacity: 1;
+  border-bottom: none;
+ }
 
             /*блок со стрелками*/
 .search-right-size {
@@ -447,23 +477,23 @@ main.hotels {
 }
 
 .found-houses-price { /*--блок с ценой*/
-    width: 134px;
+    width: 135px;
     float: right;
 }
 
 .found-button { /*--блок с кнопками подробнее и забронировать*/
-    width: 269px;
+    width: 270px;
     float: left;
 }
 
 .found-button-type-1 {
-    width: 118px;
+    width: 120px;
     float: left;
 }
 
 .found-button-type-2 {
-   width: 150px;
-   float: left;
+    width: 150px;
+    float: right;
 }
 
 .rating {
