@@ -179,7 +179,7 @@ img.card-sedona {
     width: 34%;
     background: #81b3d2;
     margin: 0 auto;
-    padding: 51px 57px;
+    padding: 52px 57px;
     box-sizing: border-box;
     float: left;
     text-align: center;
@@ -236,7 +236,7 @@ img.card-sedona {
     width: 34%;
     background: #81b3d2;
     margin: 0 auto;
-    padding: 51px 57px;
+    padding: 52px 57px;
     box-sizing: border-box;
     float: right;
     text-align: center;
@@ -263,14 +263,78 @@ img.card-sedona {
     text-align: center;
 }
 
-div.pluses-block-2:nth-child(3) {
-    float: right;
+
+/*КОНЕЦ Секция с КРАСИВАЯ ДОРОГА МАЛО ТУРИСТОВ*/
+/*НАЧАЛО секция с формой*/
+.interest-blok {
+    width: 1200px;
+    background: #fff;
+    padding-top: 40px;
+    padding-bottom: 60px;
+
+}
+
+.align-1 {
+    width: 430px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 24px;
+    margin-bottom: 60px;
+}
+
+.booking-title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.search-form-book {
+    position: relative;
+    margin-left: 260px;
+}
+
+.modal-content {
+    position: absolute;
+    bottom: -277px;
+    padding: 55px 55px;
+    margin: 0px auto;
+    width: 570px;
+    color: #000;
+}
+
+.search-link-block {
+    background: #766357;
+    padding: 30px 140px;
+    font-size: 21px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.search-link {
+    color: #fff;
+    text-decoration: none;
 }
 
 
+form {
+    width: 570px;
+    padding: 55px 55px;
+    margin: 0px auto;
+    background: #fff;
+    box-sizing: border-box;
+}
 
-/*КОНЕЦ Секция с КРАСИВАЯ ДОРОГА МАЛО ТУРИСТОВ*/
+/*КОНЕЦ секция с формой*/
 
+
+/*НАЧАЛО секция с КАРТОЙ*/
+iframe {
+    margin: 0px auto;
+    width: 1200px;
+    height: 470px;
+    border: 0px;
+    vertical-align: middle;
+}
+/*КОНЕЦ секция с КАРТОЙ*/
 
 
 
@@ -294,20 +358,17 @@ main.hotels {
 
 .filter-infrastructure {
     width: 300px;
-    /*height: 154px;*/
     float: left;
 }
 
 .filter-houses {
     width: 300px;
-    /*height: 154px;*/
     float: left;
 }
 
 
 .filter-price {
     width: 318px;
-    /*height: 154px;*/
     float: right;
     margin: 0 auto;
 }
@@ -321,7 +382,6 @@ main.hotels {
     /*display: inline-block;*/
     background: #fff;
     width: 1200px;
-    /*height: 88px;*/
 }
 
 .search-found {
@@ -422,7 +482,6 @@ main.hotels {
 
 .rating-number {
     width: 110px;
-    /*height: 25px;*/
     background: #f2f2f2;
     float: right;
     margin-right: 73px;
@@ -438,64 +497,11 @@ main.hotels {
 
 /*КОНЕЦ секция с отелями*/
 
-/*НАЧАЛО секция с формой*/
-.interest-blok {
-    width: 1200px;
-    background: #fff;
-    padding-top: 60px;
-    padding-bottom: 140px;
-}
 
-.booking-title {
-    font-size: 30px;
-    font-weight: bold;
-}
-
-.align-1 {
-    width: 430px;
-    margin: 0 auto;
-    text-align: center;
-    margin-bottom: 60px;
-
-}
-
-.search-form-link {
-    width: 565px;
-    /*height: 85px;*/
-    background: #766357;
-    /*padding-top: 24px;*/
-    margin: 0 auto;
-
-}
-
-.search-form-book {
-    width: 565px;
-    /*height: 480px;*/
-    margin: 0 auto;
-    background: #fff;
-}
-
-
-
-
-
-/*КОНЕЦ секция с формой*/
-
-
-/*НАЧАЛО секция с КАРТОЙ*/
-iframe {
-    position: absolute;
-    margin: 0px auto;
-    width: 1200px;
-    /*height: 470px;*/
-    border: 0px;
-}
-/*КОНЕЦ секция с КАРТОЙ*/
 
 /*НАЧАЛО секция с ФУТЕРОМ*/
 footer {
     width: 1200px;
-    /*max-height: 120px;*/
     background: #fff;
     margin: 0px auto;
     padding-top: 40px;
@@ -503,9 +509,10 @@ footer {
 }
 
 .link-first {
+    padding-top: 10px;
     float: left;
     width: 400px;
-    /*margin: 20px auto;*/
+    margin: 0px auto;
     text-align: center;
 }
 
@@ -524,7 +531,9 @@ footer {
 }
 
 .hashtag {
+    padding-top: 10px;
     line-height: 26px;
+    text-decoration: none;
 }
 
 .social-btn {
@@ -549,6 +558,21 @@ footer {
     background: #81b3d2 url("../img/youtube.png") no-repeat center;
 }
 
+.html-ac {
+    font-size: 14px;
+    color: black;
+    padding-left: 105px;
+    text-decoration: none;
+    text-align: center;
+    float: left;
+
+}
+
+/*.footer-HTMLacademy {
+    float: right;
+    text-align: center;
+    padding-right: 105px;
+}*/
 /*КОНЕЦ ФУТЕРА*/
 
 

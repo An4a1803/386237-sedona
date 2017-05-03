@@ -106,31 +106,45 @@
     </section>
 
     <section class="search-form-book">
-      <div class="search-form-link">
-        <a class="search-btn" href="#">Поиск гостиницы в седоне</a>
-      </div>
-      <form method="post" action="/search">
-        <label class="booking-arrive" for="booking-arrive-date">Дата заезда:
-          <a class="arrive-cal" href="#"><span class="icon-calendar"></span></a>
-        </label>
-        <input type="text" name="date-of-arrive" value="24 апреля 2017" id="booking-arrive-date">
-        <label class="booking-departure" for="booking-departure-date">Дата выезда:
-          <a class="departure-cal" href="#"><span class="icon-calendar"></span></a>
-        </label>
-        <input type="text" name="date-of-departure" value="4 июля 2017" id="booking-departure-date">
-        <div class="people">
-          <label class="booking-form-label" for="booking-audit-adult">Взрослые:</label>
-          <button type="button" name="minus-adult"><span class="icon-minus"></span></button><!-- кнопка взрослые"-" -->
-          <input type="text" id="booking-audit-adult" value="2" required><!-- выбрано в поле 2 чел -->
-          <button type="button" name="plus-adult"><span class="icon-plus"></span></button><!-- кнопка взрослые"+" -->
-              <!-- ввод количества детей -->
-          <label class="booking-form-label" for="booking-audit-kids">Дети:</label>
-          <button type="button" name="minus-children"><span class="icon-minus"></span></button><!-- кнопка дети"-" -->
-          <input type="text" id="booking-audit-kids" value="0" required><!-- выбрано в поле 0 чел -->
-          <button type="button" name="plus-children"><span class="icon-plus"></span></button><!-- кнопка дети"+" -->
+      <div class="modal-content">
+        <div class="search-link-block">
+          <a class="search-link" href="#">Поиск гостиницы в седоне</a>
         </div>
-        <button class="booking-form-btn" type="submit">Найти</button>
-      </form>
+        <form method="post" action="/search">
+          <label class="booking-arrive" for="booking-arrive-date">Дата заезда:
+            <a class="arrive-cal" href="#">
+              <span class="icon-calendar"></span>
+            </a>
+          </label>
+          <input type="text" name="date-of-arrive" value="24 апреля 2017" id="booking-arrive-date">
+          <label class="booking-departure" for="booking-departure-date">Дата выезда:
+            <a class="departure-cal" href="#">
+              <span class="icon-calendar"></span>
+            </a>
+          </label>
+          <input type="text" name="date-of-departure" value="4 июля 2017" id="booking-departure-date">
+          <div class="people">
+            <label class="booking-form-label" for="booking-audit-adult">Взрослые:</label>
+            <button type="button" name="minus-adult">
+              <span class="icon-minus"></span>
+            </button><!-- кнопка взрослые"-" -->
+            <input type="text" id="booking-audit-adult" value="2" required><!-- выбрано в поле 2 чел -->
+            <button type="button" name="plus-adult">
+              <span class="icon-plus"></span>
+            </button><!-- кнопка взрослые"+" -->
+              <!-- ввод количества детей -->
+            <label class="booking-form-label" for="booking-audit-kids">Дети:</label>
+            <button type="button" name="minus-children">
+              <span class="icon-minus"></span>
+            </button><!-- кнопка дети"-" -->
+            <input type="text" id="booking-audit-kids" value="0" required><!-- выбрано в поле 0 чел -->
+            <button type="button" name="plus-children">
+              <span class="icon-plus"></span>
+            </button><!-- кнопка дети"+" -->
+          </div>
+          <button class="booking-form-btn" type="submit">Найти</button>
+        </form>
+      </div>
     </section>
     <section class="map">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.180521662296!2d-111.83024383534357!3d34.85437335639766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNg!5e0!3m2!1sru!2s!4v1493279104759" allowfullscreen>
@@ -144,16 +158,18 @@
   <footer>
     <div class="container clearfix">
       <section class="link-first">
-        <a class="hashtag properties-black-h3" href="">#visitsedona</p>
+        <a class="hashtag properties-black-h3" href="#">#visitsedona</p>
       </section>
       <section class="link-second">
         <a class="social-btn social-btn-twitter" href="https://twitter.com/">Twitter</a><!-- иконка твиттера png-->
         <a class="social-btn social-btn-facebook" href="https://www.facebook.com/">Facebook</a><!-- иконка контакта png-->
         <a class="social-btn social-btn-youtube" href="http://www.youtube.com/">Youtube</a><!-- иконка ютуба png-->
       </section>
-      <!-- <section class="link-third">
-        <p class="btn">HTML Academy</p>
-      </section> -->
+      <section class="link-third">
+        <a class="html-ac" href="https://htmlacademy.ru/intensive/htmlcss">
+          <img src="img/html-academy.png" alt="HTMLacademy">
+        </a>
+      </section>
     </div>
   </footer>
 
