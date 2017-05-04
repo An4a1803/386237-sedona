@@ -341,7 +341,6 @@ main.hotels {
 
 /*НАЧАЛО форма с фильтром жилья*/
 
-/*не могу вставить рисунок на бэке формы!!!*/
 .filter {
     margin: 0 auto;
     padding: 0;
@@ -349,26 +348,29 @@ main.hotels {
 }
 
 .filter-inf-house {
-    display: block;
     width: 600px;
     margin: 0 auto;
     float: left;
-    padding: 30px 70px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .filter-infrastructure {
-    display: block;
     box-sizing: border-box;
-    padding-right: 150px;
+    padding-left: 70px;
+    /*padding-right: 15px;*/
     width: 300px;
-    /*padding-right: 100px;*/
     float: left;
 }
 
-.filter-houses {
+label.filter-select {
     display: block;
-    width: 300px;
+}
+
+.filter-houses {
+    width: 270px;
     float: right;
+
 }
 
 
@@ -378,6 +380,142 @@ main.hotels {
     margin: 0 auto;
 }
 
+/*Ползунки справа*/
+.filter-range {
+  width: 320px;
+  margin: 0 auto;
+  padding: 30px 70px;
+  float: right;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.filter-range-title {
+  margin-bottom: 9px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.price-controls {
+  position: relative;
+
+  height: 36px;
+  margin-bottom: 20px;
+
+  font-size: 0;
+
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 2px;
+  height: 22px;
+
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+
+  color: inherit;
+  font: inherit;
+
+  background: none;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #000000;
+  background: #ffffff;
+}
+/*Ползунки справа*/
 /*КОНЕЦ форма с фильтром жилья*/
 
 /*НАЧАЛО секция с сылками найдень и т.п.*/
@@ -425,14 +563,20 @@ a.search-select:after {
 }
 
 a.search-select:hover {
-  color: #81b3d2;
+    color: #81b3d2;
+    opacity: 0.7;
 }
 
 a.search-select:active:after {
-  color: #000;
-  opacity: 1;
-  border-bottom: none;
+    opacity: 1;
+    border-bottom: none;
  }
+
+a.search-select:active {
+    opacity: 1;
+    color: #000;
+}
+
 
             /*блок со стрелками*/
 .search-right-size {
@@ -460,13 +604,14 @@ a.search-select:active:after {
     width: 165px;
     float: left;
     margin: 0;
-    padding: 0;
+    padding-top: 5px;
     vertical-align: middle;
 }
 
-img.houses-img {
+/*img.houses-img {
     vertical-align: middle;
-}
+    height: auto;
+}*/
 
 .found-houses-all { /*--общий для отеля, гостиницей. ценой*/
     width: 370px;

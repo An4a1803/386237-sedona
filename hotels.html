@@ -28,37 +28,63 @@
           <form method="post" action="/">
           <div class="filter-inf-house">
             <div class="filter-infrastructure">
-              <h3 class="filter-infrastructure-title">Инфраструктура</h3>
-              <input type="checkbox" name="filter-pool">
-              <label class="filter-select" for="filter-pool">Бассейн</label>
-              <input type="checkbox" name="filter-parking">
-              <label class="filter-select" for="filter-parking">Парковка</label>
-              <input type="checkbox" name="filter-wifi">
-              <label class="filter-select" for="filter-wifi">Парковка</label>
+              <h3 class="filter-infrastructure-title">Инфраструктура:</h3>
+              <label class="filter-select" for="filter-pool">
+                <input type="checkbox" name="filter-pool">
+                <span class="checkbox-custom"></span>
+                <span class="label">Бассейн</span>
+              </label>
+              <label class="filter-select" for="filter-parking">
+                <input type="checkbox" name="filter-parking">
+                <span class="checkbox-custom"></span>
+                <span class="label">Парковка</span>
+              </label>
+              <label class="filter-select" for="filter-wifi">
+                <input type="checkbox" name="filter-wifi">
+                <span class="checkbox-custom"></span>
+                <span class="label">Wi-fi</span>
+              </label>
             </div>
             <div class="filter-houses">
-              <h3 class="filter-houses-title">Тип жилья</h3>
-              <input type="checkbox" name="filter-hotel">
-              <label class="filter-select" for="filter-hotel">Гостиница</label>
-              <input type="checkbox" name="filter-motel">
-              <label class="filter-select" for="filter-motel">Мотель</label>
-              <input type="checkbox" name="filter-apartament">
-              <label class="filter-select" for="filter-apartament">Апартаменты</label>
+              <h3 class="filter-houses-title">Тип жилья:</h3>
+              <label class="filter-select" for="filter-hotel">
+                <input type="checkbox" name="filter-hotel">
+                <span class="checkbox-custom"></span>
+                <span class="label">Гостиница</span>
+              </label>
+              <label class="filter-select" for="filter-motel">
+                <input type="checkbox" name="filter-motel">
+                <span class="checkbox-custom"></span>
+                <span class="label">Мотель</span>
+              </label>
+              <label class="filter-select" for="filter-apartament">
+                <input type="checkbox" name="filter-apartament">
+                <span class="checkbox-custom"></span>
+                <span class="label">Апартаменты</span>
+              </label>
             </div>
           </div>
-          <div class="filter-price">
-            <p class="filter-price-title">Стоимость в сутки (Р):</p>
-            <!-- должны ли цифры в окошке уменьшаться/увелич вместе с ползунком??? как сделать ползунок с кругами (оформить круглыми div)??? input type=numbers или text???  -->
-            <div class="">
-             <!-- &&& -->
-             <!-- &&& -->
-           </div>
-           <button class="filter-btn" type="submit">Показать
-           </button>
-         </div>
+<!-- НАЧАЛО Блок с ползунками справа-->
+          <div class="filter-range">
+            <div class="filter-range-title">Стоимость в сутки (р):</div>
+            <div class="price-controls">
+              <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+              <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+            </div>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
+            </div>
+            <button class="btn-transparent" type="submit">Показать</button>
+          </div>
+<!-- КОНЕЦ Блок с ползунками справа-->
+
         </form>
-        </section>
-      </div>
+      </section>
+    </div>
       <!-- блок с сортировкой и стреклками-->
       <div class="search container clearfix">
       <div class="search-left-size">
