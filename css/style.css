@@ -349,6 +349,7 @@ main.hotels {
 }
 
 .filter-inf-house {
+    display: block;
     width: 600px;
     margin: 0 auto;
     float: left;
@@ -356,11 +357,16 @@ main.hotels {
 }
 
 .filter-infrastructure {
+    display: block;
+    box-sizing: border-box;
+    padding-right: 150px;
     width: 300px;
+    /*padding-right: 100px;*/
     float: left;
 }
 
 .filter-houses {
+    display: block;
     width: 300px;
     float: right;
 }
@@ -451,49 +457,90 @@ a.search-select:active:after {
 }
 
 .found-houses-img {
-    width: 230px;
+    width: 165px;
     float: left;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+}
+
+img.houses-img {
+    vertical-align: middle;
 }
 
 .found-houses-all { /*--общий для отеля, гостиницей. ценой*/
     width: 370px;
     margin: 0px;
+    padding: 0px;
     float: left;
 }
 
 .found-houses-info { /*--блок с названием отеля*/
     width: 270px;
     float: left;
+    padding: 0px;
+    margin: 0px;
+}
+
+a.found-info-title {
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 21px;
+    text-decoration: none;
 }
 
 .found-about { /*--блок с гостиницей и 4000р*/
     width: 270px;
     float: left;
+    margin: 0px;
+    padding: 0px;
 }
 
 .found-houses-type { /*--блок с гостиницей*/
-    width: 135px;
+    width: 120px;
     float: left;
+    line-height: 21px;
 }
 
 .found-houses-price { /*--блок с ценой*/
-    width: 135px;
-    float: right;
+    width: 70px;
+    float: left;
 }
 
 .found-button { /*--блок с кнопками подробнее и забронировать*/
     width: 270px;
     float: left;
+
 }
 
 .found-button-type-1 {
-    width: 120px;
+    width: 110px;
+    margin-right: 7px;
+    padding: 0px;
     float: left;
+    text-align: center;
+    line-height: 26px;
+    background-color: #81b3d2;
+}
+
+a.found-button-more {
+    text-decoration: none;
+    color: #fff;
 }
 
 .found-button-type-2 {
-    width: 150px;
-    float: right;
+    width: 140px;
+    float: left;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    line-height: 26px;
+    background-color: #766357;
+}
+
+a.found-button-book {
+    text-decoration: none;
+    color: #fff;
 }
 
 .rating {
@@ -506,19 +553,21 @@ a.search-select:active:after {
 
 .rating-stars {
     float: right;
-    padding-bottom: 30px;
+    padding-bottom: 45px;
 }
 
 .rating-number {
     width: 110px;
     background: #f2f2f2;
     float: right;
-
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
 
 .rating-number p {
     margin: 0 auto;
     text-align: center;
+    opacity: 0.3;
 }
 
 
