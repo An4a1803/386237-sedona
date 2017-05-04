@@ -370,9 +370,7 @@ label.filter-select {
 .filter-houses {
     width: 270px;
     float: right;
-
 }
-
 
 .filter-price {
     width: 318px;
@@ -519,7 +517,6 @@ label.filter-select {
 /*КОНЕЦ форма с фильтром жилья*/
 
 /*НАЧАЛО секция с сылками найдень и т.п.*/
-
 .search-found {
     width: 230px;
     float: left;
