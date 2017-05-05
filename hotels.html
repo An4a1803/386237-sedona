@@ -29,39 +29,33 @@
           <div class="filter-inf-house">
             <div class="filter-infrastructure">
               <h3 class="filter-infrastructure-title">Инфраструктура:</h3>
-              <label class="filter-select" for="filter-pool">
-                <input class="checkbox" type="checkbox" name="filter-pool">
-                <span class="checkbox-custom"></span>
-                <span class="label">Бассейн</span>
-              </label>
-              <label class="filter-select" for="filter-parking">
-                <input class="checkbox" type="checkbox" name="filter-parking">
-                <span class="checkbox-custom"></span>
-                <span class="label">Парковка</span>
-              </label>
-              <label class="filter-select" for="filter-wifi">
-                <input class="checkbox" type="checkbox" name="filter-wifi">
-                <span class="checkbox-custom"></span>
-                <span class="label">Wi-fi</span>
-              </label>
+                <input id="cfirst" type="checkbox" name="first" checked hidden />
+                <label class="filter-select" for="cfirst">
+                  <span class="filter-name">Бассейн</span>
+                </label>
+                <input id="csecond" type="checkbox" name="second" hidden />
+                <label class="filter-select" for="csecond">
+                  <span class="filter-name">Парковка</span>
+                </label>
+                <input id="cthird" type="checkbox" name="third" hidden />
+                <label class="filter-select" for="cthird">
+                  <span class="filter-name">Wi-fi</span>
+                </label>
             </div>
             <div class="filter-houses">
               <h3 class="filter-houses-title">Тип жилья:</h3>
-              <label class="filter-select" for="filter-hotel">
-                <input class="checkbox" type="checkbox" name="filter-hotel">
-                <span class="checkbox-custom"></span>
-                <span class="label">Гостиница</span>
-              </label>
-              <label class="filter-select" for="filter-motel">
-                <input class="checkbox" type="checkbox" name="filter-motel">
-                <span class="checkbox-custom"></span>
-                <span class="label">Мотель</span>
-              </label>
-              <label class="filter-select" for="filter-apartament">
-                <input class="checkbox" type="checkbox" name="filter-apartament">
-                <span class="checkbox-custom"></span>
-                <span class="label">Апартаменты</span>
-              </label>
+              <input id="cfirst" type="checkbox" name="first" checked hidden />
+                <label class="filter-select" for="cfirst">
+                  <span class="filter-name">Гостиница</span>
+                </label>
+                <input id="csecond" type="checkbox" name="second" checked hidden />
+                <label class="filter-select" for="csecond">
+                  <span class="filter-name">Мотель</span>
+                </label>
+                <input id="cthird" type="checkbox" name="third" checked hidden />
+                <label class="filter-select" for="cthird">
+                  <span class="filter-name">Апартаменты</span>
+                </label>
             </div>
           </div>
 <!-- НАЧАЛО Блок с ползунками справа-->
@@ -231,8 +225,9 @@
         <a class="social-btn social-btn-youtube" href="http://www.youtube.com/">Youtube</a><!-- иконка ютуба png-->
       </section>
       <section class="link-third">
+        <span class="html-ac">website by </span>
         <a class="html-ac" href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/html-academy.png" alt="HTMLacademy">
+          <img class="html-im" src="img/html-academy-1.png" alt="HTMLacademy">
         </a>
       </section>
     </div>

@@ -369,13 +369,14 @@ main.hotels {
     max-height: 215px;
     padding: 0;
     background: url("../img/background-2-small.jpg");
+    color: #fff;
 }
 
 .filter-inf-house {
     width: 600px;
     margin: 0 auto;
     float: left;
-    padding-top: 30px;
+    padding-top: 13px;
     padding-bottom: 30px;
 }
 
@@ -389,33 +390,47 @@ main.hotels {
 
 /*НАЧАЛО ЧЕКБОКСЫ*/
 
-.checkbox {
-    display: none;
-}
-
-
 label.filter-select {
- width: 32px;
- height: 26px;
- display: block;
- position: relative;
+   width: 100px;
+   /*height: 26px;*/
+   display: block;
+   position: relative;
 }
 
-input[type="checkbox"] + span.checkbox-custom {
- position: absolute;
- left: 0; top: 0;
- width: 100%; height: 100%;
- background: url(../img/checkbox-O.png) no-repeat; /* Фоновый рисунок */
- cursor: pointer;
+span.filter-name {
+  padding-left: 30px;
 }
 
-input[type="checkbox"]:checked + span.checkbox-custom  	{
- /*position: absolute;
- left: 0; top: 0;
- width: 100%; height: 100%;
- cursor: pointer;*/
- background: url(../img/checkbox-V.png) no-repeat;
+input[type="checkbox"] {
+    display:none;
 }
+
+input[type="checkbox"] + label {
+    cursor: pointer;
+}
+
+
+input[type="checkbox"] + label::before {
+    content: "";
+    display: inline-block;
+    height: 22px;
+    width: 26px;
+    margin: 0 5px 0 0;
+}
+
+input[type="checkbox"] + label::before {
+    background: url(../img/checkbox-O.png) no-repeat;
+}
+
+input[type="checkbox"]:checked + label::before {
+    background: url(../img/checkbox-V.png) no-repeat;
+}
+
+input[type="checkbox"]:checked:disabled + label::before {
+    background: url(../img/checkbox-disable.png)
+}
+
+
 
 /*КОНЕЦ ЧЕКБОКСЫ*/
 
@@ -623,6 +638,12 @@ a.search-select:active {
     color: #000;
 }
 
+/**/
+
+
+
+
+
 
             /*блок со стрелками*/
 .search-right-size {
@@ -654,10 +675,6 @@ a.search-select:active {
     vertical-align: middle;
 }
 
-/*img.houses-img {
-    vertical-align: middle;
-    height: auto;
-}*/
 
 .found-houses-all { /*--общий для отеля, гостиницей. ценой*/
     width: 370px;
@@ -679,6 +696,27 @@ a.found-info-title {
     line-height: 21px;
     text-decoration: none;
 }
+
+a.found-info-title:after {
+    content: '';
+    display: block;
+    width: 100%;
+    opacity: 1;
+    border-bottom: none;
+}
+
+a.found-info-title:hover {
+    color: #81b3d2;
+    opacity: 0.7;
+}
+
+a.found-info-title:active {
+    opacity: 0.3;
+    color: #000;
+}
+
+
+/*КОНЕЦ БЛОКА С НАЗВАНИЕМ ОТЕЛЯ (ХОВЕР ССЫЛОК)*/
 
 .found-about { /*--блок с гостиницей и 4000р*/
     width: 270px;
@@ -704,6 +742,7 @@ a.found-info-title {
 
 }
 
+/*--начало блок с кнопками подробнее */
 .found-button-type-1 {
     width: 110px;
     margin-right: 7px;
@@ -719,6 +758,25 @@ a.found-button-more {
     color: #fff;
 }
 
+a.found-button-more:after {
+    content: '';
+    display: block;
+    width: 100%;
+    opacity: 1;
+    border-bottom: none;
+}
+
+div.found-button-type-1:hover {
+    background-color: #669ec0;
+}
+
+a.found-button-more:active {
+    color: #85b0cd;
+}
+
+/*--конец блок с кнопками подробнее */
+
+/*--начало блок с кнопками забронировать */
 .found-button-type-2 {
     width: 140px;
     float: left;
@@ -734,6 +792,26 @@ a.found-button-book {
     color: #fff;
 }
 
+a.found-button-book:after {
+    content: '';
+    display: block;
+    width: 100%;
+    opacity: 1;
+    border-bottom: none;
+}
+
+div.found-button-type-2:hover {
+    background-color: #604e43;
+}
+
+a.found-button-book:active {
+    color: #928a85;
+}
+
+/*--конец блок с кнопками забронировать */
+
+
+/*НАЧАЛО БЛОКА РЕЙТИНГ*/
 .rating {
     width: 110px;
     float: right;
@@ -761,7 +839,7 @@ a.found-button-book {
     opacity: 0.3;
 }
 
-
+/*КОНЕЦ БЛОКА РЕЙТИНГ*/
 /*КОНЕЦ секция с отелями*/
 
 
@@ -824,15 +902,65 @@ footer {
     background: #81b3d2 url("../img/youtube.png") no-repeat center;
 }
 
+a.social-btn:after {
+    content: '';
+    display: block;
+    width: 100%;
+    opacity: 1;
+    border-bottom: none;
+}
+
+a.social-btn:hover {
+    background-color: #669ec0;
+}
+
+a.social-btn-twitter:active {
+    background: #5496bd url("../img/twitter-active.png") no-repeat center;
+}
+
+a.social-btn-facebook:active {
+    background: #5496bd url("../img/facebook-active.png") no-repeat center;
+}
+
+a.social-btn-youtube:active {
+    background: #5496bd url("../img/youtube-active.png") no-repeat center;
+}
+
+
 .html-ac {
+    /*background: */
     font-size: 14px;
     color: black;
-    padding-left: 105px;
+    margin: 0 auto;
     text-decoration: none;
     text-align: center;
     float: left;
-
 }
+
+span.html-ac {
+    padding-top: 7px;
+    padding-right: 5px;
+    margin-left: 100px;
+    float: left;
+}
+
+
+a.html-ac:after {
+    content: '';
+    display: block;
+    width: 100%;
+    opacity: 1;
+    border-bottom: none;
+}
+
+a.html-ac:hover {
+    background: url("../img/html-academy-2.png") no-repeat center;
+}
+
+a.html-ac:active {
+    background: url("../img/html-academy-3.png") no-repeat center;
+}
+
 
 /*КОНЕЦ ФУТЕРА*/
 
