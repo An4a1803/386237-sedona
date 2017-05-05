@@ -82,25 +82,10 @@ header {
     padding: 15px 70px;
 }
 
-a.menu-logo {
+a.menu-logo img {
     position: absolute;
     margin: -15px auto;
 
-}
-
-li:nth-child(5) {
-    float: right;
-}
-
-li:nth-child(4) {
-    float: right;
-}
-
-
-.menu-navigator ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
 }
 
 .menu-navigator li {
@@ -108,6 +93,14 @@ li:nth-child(4) {
     font-size: 14px;
     line-height: 25px;
     vertical-align: top;
+    width: 20%;
+}
+
+.menu-navigator ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: 0;
 }
 
 .menu-navigator a:hover {
@@ -177,7 +170,7 @@ img.card-sedona {
     width: 34%;
     background: #81b3d2;
     margin: 0 auto;
-    padding: 52px 57px;
+    padding: 51px 57px;
     box-sizing: border-box;
     float: left;
     text-align: center;
@@ -186,7 +179,7 @@ img.card-sedona {
 .city-sedona {
     position: relative;
     width: 66%;
-    height: 256px;
+    height: 255px;
     background: url(../img/pic-real-city-full.jpg);
     background-position: center;
     float: right;
@@ -222,7 +215,7 @@ img.card-sedona {
 .roсks-pic {
     position: relative;
     width: 66%;
-    height: 256px;
+    height: 255px;
     background: url(../img/pic-devil-bridge-full.jpg);
     background-position: center;
     float: left;
@@ -232,7 +225,7 @@ img.card-sedona {
     width: 34%;
     background: #81b3d2;
     margin: 0 auto;
-    padding: 52px 57px;
+    padding: 51px 57px;
     box-sizing: border-box;
     float: right;
     text-align: center;
@@ -257,15 +250,14 @@ img.card-sedona {
     float: left;
     text-align: center;
 }
-
-
 /*КОНЕЦ Секция с КРАСИВАЯ ДОРОГА МАЛО ТУРИСТОВ*/
+
+
 /*НАЧАЛО секция с формой*/
 .interest-blok {
     background: #fff;
     padding-top: 40px;
-    padding-bottom: 60px;
-
+    padding-bottom: 120px;
 }
 
 .align-1 {
@@ -273,7 +265,6 @@ img.card-sedona {
     margin: 0 auto;
     text-align: center;
     line-height: 24px;
-    margin-bottom: 60px;
 }
 
 .booking-title {
@@ -283,16 +274,44 @@ img.card-sedona {
 
 .search-form-book {
     position: relative;
-    margin-left: 260px;
+    /*margin-left: 260px;*/
 }
 
 .modal-content {
     position: absolute;
-    bottom: -272px;
-    padding: 55px 55px;
-    margin: 0px auto;
+    left: 50%;
+    top: -81px;
+    margin-left: -285px;
     width: 570px;
     color: #000;
+}
+
+.modal-content h2 {
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.form-index input {
+  box-sizing: border-box;
+  width: 347px;
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 13px 15px;
+  padding-right: 40px;
+
+  font-size: 14px;
+  line-height: 21px;
+  font-family: "PT Sans", "Sample", sans-serif;
+  font-weight: bold;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.form-index input.small {
+	width: 115px;
 }
 
 .search-link-block {
@@ -308,14 +327,18 @@ img.card-sedona {
     text-decoration: none;
 }
 
-
 form.form-index {
     width: 570px;
     padding: 55px 55px;
     margin: 0px auto;
     background: #fff;
     box-sizing: border-box;
+    /*font-size: 14px;
+    font-weight: bold;
+    line-height: 21px;*/
 }
+
+
 
 /*КОНЕЦ секция с формой*/
 
@@ -343,6 +366,7 @@ main.hotels {
 
 .filter {
     margin: 0 auto;
+    max-height: 215px;
     padding: 0;
     background: url("../img/background-2-small.jpg");
 }
@@ -363,9 +387,38 @@ main.hotels {
     float: left;
 }
 
-label.filter-select {
-    display: block;
+/*НАЧАЛО ЧЕКБОКСЫ*/
+
+.checkbox {
+    display: none;
 }
+
+
+label.filter-select {
+ width: 32px;
+ height: 26px;
+ display: block;
+ position: relative;
+}
+
+input[type="checkbox"] + span.checkbox-custom {
+ position: absolute;
+ left: 0; top: 0;
+ width: 100%; height: 100%;
+ background: url(../img/checkbox-O.png) no-repeat; /* Фоновый рисунок */
+ cursor: pointer;
+}
+
+input[type="checkbox"]:checked + span.checkbox-custom  	{
+ /*position: absolute;
+ left: 0; top: 0;
+ width: 100%; height: 100%;
+ cursor: pointer;*/
+ background: url(../img/checkbox-V.png) no-repeat;
+}
+
+/*КОНЕЦ ЧЕКБОКСЫ*/
+
 
 .filter-houses {
     width: 270px;
@@ -390,7 +443,6 @@ label.filter-select {
 
 .filter-range-title {
   margin-bottom: 9px;
-
   font-weight: 600;
   font-size: 16px;
   line-height: 21px;
@@ -398,12 +450,9 @@ label.filter-select {
 
 .price-controls {
   position: relative;
-
   height: 36px;
   margin-bottom: 20px;
-
   font-size: 0;
-
   border: 2px solid #ffffff;
   border-radius: 2px;
 }

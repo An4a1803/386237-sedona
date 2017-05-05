@@ -18,6 +18,7 @@
         <li><a href="#">Информация</a></li>
         <li><a href="#">Фото и видео</a></li>
          <li><a class="menu-logo" href="index.html"><img src="img/logo.png" alt=""></a></li><!--добавить картинку логотипа menu-logo.png-->
+
         <li><a href="#">Карта штата</a></li>
         <li><a href="hotels.html">Гостиницы</a></li>
       </ul>
@@ -112,13 +113,13 @@
           <a class="search-link" href="#">Поиск гостиницы в седоне</a>
         </div>
         <form class="form-index" method="post" action="/search">
-          <label class="booking-arrive" for="booking-arrive-date">Дата заезда:
+          <label class="booking-form-label" for="booking-arrive-date">Дата заезда:
             <a class="arrive-cal" href="#">
               <span class="icon-calendar"></span>
             </a>
           </label>
           <input type="text" name="date-of-arrive" value="24 апреля 2017" id="booking-arrive-date">
-          <label class="booking-departure" for="booking-departure-date">Дата выезда:
+          <label class="booking-form-label" for="booking-departure-date">Дата выезда:
             <a class="departure-cal" href="#">
               <span class="icon-calendar"></span>
             </a>
@@ -129,7 +130,7 @@
             <button type="button" name="minus-adult">
               <span class="icon-minus"></span>
             </button><!-- кнопка взрослые"-" -->
-            <input type="text" id="booking-audit-adult" value="2" required><!-- выбрано в поле 2 чел -->
+            <input class="small" type="text" id="booking-audit-adult" value="2" required><!-- выбрано в поле 2 чел -->
             <button type="button" name="plus-adult">
               <span class="icon-plus"></span>
             </button><!-- кнопка взрослые"+" -->
@@ -138,7 +139,7 @@
             <button type="button" name="minus-children">
               <span class="icon-minus"></span>
             </button><!-- кнопка дети"-" -->
-            <input type="text" id="booking-audit-kids" value="0" required><!-- выбрано в поле 0 чел -->
+            <input class="small" type="text" id="booking-audit-kids" value="0" required><!-- выбрано в поле 0 чел -->
             <button type="button" name="plus-children">
               <span class="icon-plus"></span>
             </button><!-- кнопка дети"+" -->
