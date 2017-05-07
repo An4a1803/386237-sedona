@@ -12,6 +12,7 @@
   <!--добавить Фавикон-->
 </head>
 <body>
+ <div class="shadow">
   <header class="container">
     <nav class="menu-navigator container clearfix">
       <ul>
@@ -113,38 +114,46 @@
           <a class="search-link" href="#">Поиск гостиницы в седоне</a>
         </div>
         <form class="form-index" method="post" action="/search">
-          <label class="booking-form-label" for="booking-arrive-date">Дата заезда:
+          <label class="booking-form-label" for="booking-arrive-date">
+            <span class="name-date-arr">Дата заезда:</span>
             <a class="arrive-cal" href="#">
               <span class="icon-calendar"></span>
             </a>
           </label>
-          <input type="text" name="date-of-arrive" value="24 апреля 2017" id="booking-arrive-date">
-          <label class="booking-form-label" for="booking-departure-date">Дата выезда:
+          <input type="text" name="date-of-arrive" value="24 апреля 2017" id="booking-ardep-date">
+          <label class="booking-form-label" for="booking-departure-date">
+            <span class="name-date-dep">Дата выезда:</span>
             <a class="departure-cal" href="#">
               <span class="icon-calendar"></span>
             </a>
           </label>
-          <input type="text" name="date-of-departure" value="4 июля 2017" id="booking-departure-date">
+          <input type="text" name="date-of-departure" value="4 июля 2017" id="booking-ardep-date">
           <div class="people">
-            <label class="booking-form-label" for="booking-audit-adult">Взрослые:</label>
-            <button type="button" name="minus-adult">
+            <label for="booking-audit-adult">
+              <span class="name-date-1">Взрослые:</span>
+            </label>
+            <!-- <button type="button" name="minus-adult">
               <span class="icon-minus"></span>
-            </button><!-- кнопка взрослые"-" -->
+            </button><!- кнопка взрослые"-" -->
             <input class="small" type="text" id="booking-audit-adult" value="2" required><!-- выбрано в поле 2 чел -->
-            <button type="button" name="plus-adult">
+            <!-- <button type="button" name="plus-adult">
               <span class="icon-plus"></span>
-            </button><!-- кнопка взрослые"+" -->
+            </button><!- кнопка взрослые"+" -->
               <!-- ввод количества детей -->
-            <label class="booking-form-label" for="booking-audit-kids">Дети:</label>
-            <button type="button" name="minus-children">
-              <span class="icon-minus"></span>
-            </button><!-- кнопка дети"-" -->
-            <input class="small" type="text" id="booking-audit-kids" value="0" required><!-- выбрано в поле 0 чел -->
-            <button type="button" name="plus-children">
-              <span class="icon-plus"></span>
-            </button><!-- кнопка дети"+" -->
           </div>
-          <button class="booking-form-btn" type="submit">Найти</button>
+          <div class="kids">
+            <label class="booking-form-label" for="booking-audit-kids">
+              <span class="name-date-2">Дети:</span>
+            </label>
+            <!-- <button type="button" name="minus-children">
+              <span class="icon-minus"></span>
+            </button><!кнопка дети"-" -->
+            <input class="small" type="text" id="booking-audit-kids" value="0" required><!-- выбрано в поле 0 чел -->
+            <!-- <button type="button" name="plus-children">
+              <span class="icon-plus"></span>
+            </button><!-кнопка дети"+" -->
+          </div>
+          <input class="btn-form" type="button" value="Найти" />
         </form>
       </div>
     </section>
@@ -174,6 +183,6 @@
       </section>
     </div>
   </footer>
-
+</div>
   </body>
 </html>

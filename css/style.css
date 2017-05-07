@@ -61,6 +61,10 @@ h2 {
 }
 /*КОНЕЦ основные свойства боди*/
 
+header, main, footer {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
 .container {
     width: 1200px;
 }
@@ -280,10 +284,11 @@ img.card-sedona {
 .modal-content {
     position: absolute;
     left: 50%;
-    top: -81px;
+    top: -88px;
     margin-left: -285px;
     width: 570px;
     color: #000;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 
 .modal-content h2 {
@@ -316,7 +321,7 @@ img.card-sedona {
 
 .search-link-block {
     background: #766357;
-    padding: 30px 140px;
+    padding: 33px 140px;
     font-size: 21px;
     font-weight: bold;
     text-align: center;
@@ -330,15 +335,102 @@ img.card-sedona {
 form.form-index {
     width: 570px;
     padding: 55px 55px;
+    padding-bottom: 25px;
     margin: 0px auto;
     background: #fff;
     box-sizing: border-box;
-    /*font-size: 14px;
-    font-weight: bold;
-    line-height: 21px;*/
+}
+
+span.name-date {
+  float: left;
+  line-height: 50px;
+  padding: 5px 0;
 }
 
 
+
+span.name-date-1 {
+  float: left;
+  line-height: 50px;
+}
+
+input.small {
+  width: 117px;
+  float: right;
+  font-size: 14px;
+  text-align: center;
+  padding: 0px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  background: #f2f2f2;
+  border: none;
+}
+
+span.name-date-2 {
+  float: left;
+  line-height: 50px;
+  padding-left: 40px;
+}
+
+#booking-ardep-date {
+  width: 348px;
+  float: right;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background: #f2f2f2;
+  border: none;
+}
+
+#booking-ardep-date:hover {
+  background: #ebebeb;
+}
+
+#booking-ardep-date:focus {
+  background: #fff;
+  border: 1px solid #ebebeb;
+}
+
+/*#booking-departure-date {
+  float: right;
+  background: #f2f2f2;
+}*/
+
+div.people {
+  display: block;
+  width: 230px;
+  float: left;
+  padding-bottom: 25px;
+}
+
+div.kids {
+  display: block;
+  width: 230px;
+  float: right;
+  padding-bottom: 25px;
+}
+
+input.btn-form {
+  width: 462px;
+  /*max-height: 58px;*/
+  border: 0;
+  background: #81b3d2;
+  padding: 17px 0;
+  /*padding-top: 17px;
+  padding-bottom: 17px;*/
+  line-height: 26px;
+  color: #fff;
+  font-size: 21px;
+  text-align: center;
+}
+
+input.btn-form:hover {
+   background-color: #669ec0;
+}
+
+input.btn-form:active {
+    background: #5496bd;
+    color: #6aa1c3;
+}
 
 /*КОНЕЦ секция с формой*/
 
@@ -372,6 +464,7 @@ main.hotels {
     color: #fff;
 }
 
+
 .filter-inf-house {
     width: 600px;
     margin: 0 auto;
@@ -392,6 +485,8 @@ main.hotels {
 
 label.filter-select {
    width: 100px;
+   padding-top: 10px;
+   padding-bottom: 10px;
    /*height: 26px;*/
    display: block;
    position: relative;
@@ -415,7 +510,9 @@ input[type="checkbox"] + label::before {
     display: inline-block;
     height: 22px;
     width: 26px;
+
     margin: 0 5px 0 0;
+    position: absolute;
 }
 
 input[type="checkbox"] + label::before {
