@@ -4,10 +4,9 @@
   <meta charset="utf-8">
   <title>Главная страница - Седона</title>
   <meta name="description" content="Отдых в Седоне. Спокойный отдых вдали от суеты, без скопления туристов. Тихие мотели, вскусная еда и сувениры">
-  <meta name="keywords" content="отдых в Аризоне, Аризона, Седона, мотель, отель, гостиница, апартаменты, вилла, бассейн, спа, мост дьявола, туризм, отдых"> <!--добавить контент на английском-->
+  <meta name="keywords" content="отдых в Аризоне, Аризона, Седона, мотель, отель, гостиница, апартаменты, вилла, бассейн, спа, мост дьявола, туризм, отдых">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
-  <!--добавить ссылку на Стили-->
   <link rel="icon" href="#" type="image/x-icon">
   <!--добавить Фавикон-->
 </head>
@@ -41,7 +40,7 @@
     </section>
     <section class="city container clearfix"><!--блок Настоящий городок с картинкой-->
       <div class="city-description">
-        <h3 class="properties-white-h3">Настоящий городок</h3>
+        <h3 class="city properties-white-h3">Настоящий городок</h3>
         <p class="properties-white-h4">- №1 -</p>
         <p class="properties-white-h4">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
       </div>
@@ -132,14 +131,21 @@
             <label for="booking-audit-adult">
               <span class="name-date-1">Взрослые:</span>
             </label>
-            <!-- <button type="button" name="minus-adult">
-              <span class="icon-minus"></span>
-            </button><!- кнопка взрослые"-" -->
-            <input class="small" type="text" id="booking-audit-adult" value="2" required><!-- выбрано в поле 2 чел -->
-            <!-- <button type="button" name="plus-adult">
-              <span class="icon-plus"></span>
-            </button><!- кнопка взрослые"+" -->
-              <!-- ввод количества детей -->
+
+
+
+            <div class="buttons">
+              <a class="plus-adult" href="#"></a>
+              <!-- кнопка взрослые"-" -->
+
+              <input class="small" type="text" id="booking-audit-adult" value="2" required />
+
+              <input type="button" class="plus-adult" name="button-plus" required />
+            </div>
+
+
+
+
           </div>
           <div class="kids">
             <label class="booking-form-label" for="booking-audit-kids">
@@ -149,9 +155,8 @@
               <span class="icon-minus"></span>
             </button><!кнопка дети"-" -->
             <input class="small" type="text" id="booking-audit-kids" value="0" required><!-- выбрано в поле 0 чел -->
-            <!-- <button type="button" name="plus-children">
-              <span class="icon-plus"></span>
-            </button><!-кнопка дети"+" -->
+            <a href="#" class="minus"></a>
+            <a href="#" class="minus"></a>
           </div>
           <input class="btn-form" type="button" value="Найти" />
         </form>
@@ -177,8 +182,9 @@
         <a class="social-btn social-btn-youtube" href="http://www.youtube.com/">Youtube</a><!-- иконка ютуба png-->
       </section>
       <section class="link-third">
+        <span class="html-ac">website by </span>
         <a class="html-ac" href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/html-academy.png" alt="HTMLacademy">
+          <img class="html-im" src="img/html-academy-1.png" alt="HTMLacademy">
         </a>
       </section>
     </div>

@@ -88,7 +88,10 @@ header {
 
 a.menu-logo img {
     position: absolute;
+    left: 0;
+    right: 0;
     margin: -15px auto;
+    background-position: center;
 
 }
 
@@ -97,6 +100,7 @@ a.menu-logo img {
     font-size: 14px;
     line-height: 25px;
     vertical-align: top;
+    text-align: center;
     width: 20%;
 }
 
@@ -129,7 +133,7 @@ main {
 
 img.card-welcome {
     position: absolute;
-    margin: 70px 380px;
+    margin: 77px 370px;
 }
 
 img.card-sedona {
@@ -154,7 +158,18 @@ img.card-sedona {
     margin: 0 auto;
     padding-top: 65px;
     padding-bottom: 56px;
+}
 
+.about-1 {
+  margin: 0 auto;
+  line-height: 23px;
+}
+
+
+.about-2 {
+  margin: 0 auto;
+  line-height: 23px;
+  padding-top: 32px;
 }
 
 .align {
@@ -354,17 +369,41 @@ span.name-date-1 {
   line-height: 50px;
 }
 
-input.small {
+div.buttons {
+/*  display: block;*/
   width: 117px;
-  float: right;
-  font-size: 14px;
-  text-align: center;
-  padding: 0px;
-  padding-top: 9px;
-  padding-bottom: 9px;
+  /*padding: 0;
+  margin: 0;*/
   background: #f2f2f2;
   border: none;
 }
+
+input.minus-adult {
+  width: 38px;
+  background: url(../img/minus.png) no-repeat center;
+  border: none;
+  float: left;
+  padding: 0;
+}
+
+input.small {
+  width: 38px;
+  font-size: 14px;
+  text-align: center;
+  padding: 0;
+  border: none;
+}
+
+input.plus-adult {
+  width: 38px;
+  background: url(../img/plus.png) no-repeat center;
+  border: none;
+  float: right;
+  padding: 0;
+}
+
+
+
 
 span.name-date-2 {
   float: left;
@@ -527,8 +566,6 @@ input[type="checkbox"]:checked:disabled + label::before {
     background: url(../img/checkbox-disable.png)
 }
 
-
-
 /*КОНЕЦ ЧЕКБОКСЫ*/
 
 
@@ -678,6 +715,10 @@ input[type="checkbox"]:checked:disabled + label::before {
 /*КОНЕЦ форма с фильтром жилья*/
 
 /*НАЧАЛО секция с сылками найдень и т.п.*/
+.search {
+  background: #fff;
+}
+
 .search-found {
     width: 230px;
     float: left;
@@ -692,6 +733,7 @@ input[type="checkbox"]:checked:disabled + label::before {
 }
 
 .search-left-size {
+    float: left;
     padding: 30px 70px;
     background: #fff;
 }
@@ -735,19 +777,67 @@ a.search-select:active {
     color: #000;
 }
 
-/**/
-
-
-
-
-
-
-            /*блок со стрелками*/
+/*блок со стрелками*/
 .search-right-size {
-
+    margin: 0 auto;
+    float: right;
+    width: 40px;
+    padding-top: 30px;
+    padding-right: 73px;
+    background: #fff;
+    border-top: 0px;
 }
-            /*блок со стрелками*/
+
+.search-right-size a {
+  text-decoration: none;
+}
+
+a.search-up {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 5px 10px 5px;
+  border-color: transparent transparent #cccccc transparent;
+  float: left;
+}
+
+
+a.search-down {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 5px 0 5px;
+  border-color: #cccccc transparent transparent transparent;
+  float: right;
+}
+
+a.search-up:hover {
+  border-style: solid;
+  border-width: 0 5px 10px 5px;
+  border-color: transparent transparent #000 transparent;
+}
+
+a.search-down:hover {
+  border-style: solid;
+  border-width: 10px 5px 0 5px;
+  border-color: #000 transparent transparent transparent;
+}
+
+a.search-up:active {
+  border-style: solid;
+  border-width: 0 5px 10px 5px;
+  border-color: transparent transparent #81b3d2 transparent;
+}
+
+a.search-down:active {
+  border-style: solid;
+  border-width: 10px 5px 0 5px;
+  border-color: #81b3d2 transparent transparent transparent;
+}
+
+   /*блок со стрелками*/
 /*КОНЕЦ секция с сылками найден и т.п.*/
+
 
 /*НАЧАЛО секция с отелями*/
 .found {        /*--общий для всех блоков*/
