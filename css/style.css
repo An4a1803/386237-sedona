@@ -330,10 +330,6 @@ img.card-sedona {
   text-transform: uppercase;
 }
 
-.form-index input.small {
-	width: 115px;
-}
-
 .search-link-block {
     background: #766357;
     padding: 33px 140px;
@@ -426,14 +422,15 @@ label.adults {
 
 a.adults {
   width: 8px;
-  padding: 0;
-  background-image: url(../img/minus.png) no-repeat center;
+  padding-bottom: 5px;
+  padding-top: 0px;
+  background-image: url(../img/minus.png) no-repeat;
   background: #f2f2f2;
   text-decoration: none;
 }
 
 input.small {
-  width: 8px;
+  width: 38px;
   font-size: 14px;
   text-align: center;
   padding: 0;
