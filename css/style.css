@@ -372,16 +372,15 @@ span.name-date-1 {
 div.buttons {
 /*  display: block;*/
   width: 117px;
-  /*padding: 0;
-  margin: 0;*/
+  padding: 0;
+  margin: 0;
   background: #f2f2f2;
   border: none;
+  float: right;
 }
 
-input.minus-adult {
+a.minus-adult {
   width: 38px;
-  background: url(../img/minus.png) no-repeat center;
-  border: none;
   float: left;
   padding: 0;
 }
@@ -394,10 +393,8 @@ input.small {
   border: none;
 }
 
-input.plus-adult {
+a.plus-adult {
   width: 38px;
-  background: url(../img/plus.png) no-repeat center;
-  border: none;
   float: right;
   padding: 0;
 }
