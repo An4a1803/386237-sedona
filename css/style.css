@@ -356,66 +356,94 @@ form.form-index {
     box-sizing: border-box;
 }
 
-span.name-date {
+span.name-date-arr {
   float: left;
   line-height: 50px;
-  padding: 5px 0;
+  padding-right: 20px;
 }
 
-
+span.name-date-dep {
+  float: left;
+  line-height: 50px;
+  padding-top: 10px;
+}
 
 span.name-date-1 {
   float: left;
-  line-height: 50px;
 }
-
-div.buttons {
-/*  display: block;*/
-  width: 117px;
-  padding: 0;
-  margin: 0;
-  background: #f2f2f2;
-  border: none;
-  float: right;
-}
-
-a.minus-adult {
-  width: 38px;
-  float: left;
-  padding: 0;
-}
-
-input.small {
-  width: 38px;
-  font-size: 14px;
-  text-align: center;
-  padding: 0;
-  border: none;
-}
-
-a.plus-adult {
-  width: 38px;
-  float: right;
-  padding: 0;
-}
-
-
-
 
 span.name-date-2 {
   float: left;
-  line-height: 50px;
   padding-left: 40px;
 }
 
-#booking-ardep-date {
-  width: 348px;
+#booking-arrive-date {
+  width: 308px;
   float: right;
   padding-top: 8px;
   padding-bottom: 8px;
   background: #f2f2f2;
   border: none;
 }
+
+.arrive-cal img {
+  margin: 0;
+  float: right;
+  padding: 7.5px 10px;
+  background-image: url(../img/calendar.png);
+  background: #f2f2f2;
+}
+
+#booking-departure-date {
+  width: 308px;
+  float: right;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background: #f2f2f2;
+  border: none;
+}
+
+.departure-cal img {
+  margin: 0;
+  float: right;
+  padding: 7.5px 10px;
+  background-image: url(../img/calendar.png);
+  background: #f2f2f2;
+}
+
+div.people {
+  display: block;
+  width: 230px;
+  float: left;
+  padding-bottom: 25px;
+}
+
+label.adults {
+  width: 10px;
+  padding: 0;
+  margin: 0;
+}
+
+a.adults {
+  width: 8px;
+  padding: 0;
+  background-image: url(../img/minus.png) no-repeat center;
+  background: #f2f2f2;
+  text-decoration: none;
+}
+
+input.small {
+  width: 8px;
+  font-size: 14px;
+  text-align: center;
+  padding: 0;
+  border: none;
+  background: #f2f2f2;
+}
+
+
+
+
 
 #booking-ardep-date:hover {
   background: #ebebeb;
@@ -431,12 +459,7 @@ span.name-date-2 {
   background: #f2f2f2;
 }*/
 
-div.people {
-  display: block;
-  width: 230px;
-  float: left;
-  padding-bottom: 25px;
-}
+
 
 div.kids {
   display: block;
