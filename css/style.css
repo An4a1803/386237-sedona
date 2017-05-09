@@ -97,6 +97,7 @@ a.menu-logo img {
 
 .menu-navigator li {
     display: inline-block;
+    position: relative;
     font-size: 14px;
     line-height: 25px;
     vertical-align: top;
@@ -189,10 +190,16 @@ img.card-sedona {
     width: 34%;
     background: #81b3d2;
     margin: 0 auto;
-    padding: 51px 57px;
+    padding: 51px 57px 59px 57px;
     box-sizing: border-box;
     float: left;
     text-align: center;
+}
+
+.city-description-name {
+    display: inline-block;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .city-sedona {
@@ -216,7 +223,7 @@ img.card-sedona {
     width: 400px;
     margin: 0 auto;
     padding-top: 58px;
-    padding-bottom: 86px;
+    padding-bottom: 73px;
     padding-left: 57px;
     padding-right: 57px;
     box-sizing: border-box;
@@ -240,11 +247,17 @@ img.card-sedona {
     float: left;
 }
 
+.roсks-description-name {
+    display: inline-block;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
 .roсks-description {
     width: 34%;
     background: #81b3d2;
     margin: 0 auto;
-    padding: 51px 57px;
+    padding: 25px 52px 58px 60px;
     box-sizing: border-box;
     float: right;
     text-align: center;
@@ -258,12 +271,18 @@ img.card-sedona {
     background: #f2f2f2;
 }
 
+.pluses-2-name {
+  display: inline-block;
+    padding-left: 50px;
+    padding-right: 60px;
+}
+
 .pluses-block-2 {
     width: 400px;
     margin: 0 auto;
-    padding-top: 50px;
+    padding-top: 25px;
     padding-bottom: 55px;
-    padding-left: 75px;
+    padding-left: 72px;
     padding-right: 60px;
     box-sizing: border-box;
     float: left;
@@ -275,7 +294,7 @@ img.card-sedona {
 /*НАЧАЛО секция с формой*/
 .interest-blok {
     background: #fff;
-    padding-top: 40px;
+    padding-top: 35px;
     padding-bottom: 120px;
 }
 
@@ -354,23 +373,26 @@ form.form-index {
 
 span.name-date-arr {
   float: left;
-  line-height: 50px;
+  /*line-height: 50px;*/
   padding-right: 20px;
+  padding-top: 7px;
 }
 
 span.name-date-dep {
   float: left;
-  line-height: 50px;
-  padding-top: 10px;
+  padding-top: 45px;
 }
 
 span.name-date-1 {
   float: left;
+  padding-right: 40px;
+  padding-top: 10px;
 }
 
 span.name-date-2 {
   float: left;
-  padding-left: 40px;
+  padding-left: 50px;
+  padding-top: 10px;
 }
 
 #booking-arrive-date {
@@ -414,32 +436,49 @@ div.people {
   padding-bottom: 25px;
 }
 
-label.adults {
-  width: 10px;
-  padding: 0;
-  margin: 0;
+div.kids {
+  display: block;
+  width: 230px;
+  float: right;
+  padding-bottom: 25px;
 }
 
-a.adults {
-  width: 8px;
-  padding-bottom: 5px;
-  padding-top: 0px;
-  background-image: url(../img/minus.png) no-repeat;
-  background: #f2f2f2;
-  text-decoration: none;
+div.booking-form-label {
+  float: left;
+}
+
+div.small {
+  float: right;
+  width: 117px;
+}
+
+a.minus {
+    float: left;
+    width: 30px;
+    background: #f2f2f2;
+    padding-top: 10px;
+    padding-bottom: 16px;
+    padding-left: 10px;
+}
+
+a.plus {
+    float: right;
+    width: 30px;
+    background: #f2f2f2;
+    padding-top: 12px;
+    padding-bottom: 14px;
+    padding-left: 9px;
 }
 
 input.small {
+  display: inline-block;
   width: 38px;
   font-size: 14px;
   text-align: center;
-  padding: 0;
+  padding: 13px;
   border: none;
   background: #f2f2f2;
 }
-
-
-
 
 
 #booking-ardep-date:hover {
@@ -449,20 +488,6 @@ input.small {
 #booking-ardep-date:focus {
   background: #fff;
   border: 1px solid #ebebeb;
-}
-
-/*#booking-departure-date {
-  float: right;
-  background: #f2f2f2;
-}*/
-
-
-
-div.kids {
-  display: block;
-  width: 230px;
-  float: right;
-  padding-bottom: 25px;
 }
 
 input.btn-form {
@@ -494,7 +519,7 @@ input.btn-form:active {
 /*НАЧАЛО секция с КАРТОЙ*/
 iframe {
     margin: 0px auto;
-    height: 472px;
+    height: 458px;
     border: 0px;
     vertical-align: middle;
 }
@@ -541,15 +566,15 @@ main.hotels {
 
 label.filter-select {
    width: 100px;
-   padding-top: 10px;
-   padding-bottom: 10px;
+   padding-top: 5px;
+   padding-bottom: 20px;
    /*height: 26px;*/
    display: block;
    position: relative;
 }
 
 span.filter-name {
-  padding-left: 30px;
+  padding-left: 40px;
 }
 
 input[type="checkbox"] {
@@ -601,7 +626,7 @@ input[type="checkbox"]:checked:disabled + label::before {
 .filter-range {
   width: 320px;
   margin: 0 auto;
-  padding: 30px 70px;
+  padding: 26px 70px;
   float: right;
   color: #ffffff;
   text-transform: uppercase;
@@ -711,7 +736,7 @@ input[type="checkbox"]:checked:disabled + label::before {
 .btn-transparent {
   display: block;
   margin: 0 auto;
-  padding: 6px 35px;
+  padding: 6px 30px;
 
   font-size: 14px;
   line-height: 20px;
@@ -737,13 +762,13 @@ input[type="checkbox"]:checked:disabled + label::before {
 }
 
 .search-found {
-    width: 230px;
+    width: 165px;
     float: left;
     display: inline-block;
 }
 
 .search-sorting {
-    width: 126px;
+    width: 110px;
     display: inline-block;
     font-size: 12px;
     line-height: 18px;
@@ -751,7 +776,7 @@ input[type="checkbox"]:checked:disabled + label::before {
 
 .search-left-size {
     float: left;
-    padding: 30px 70px;
+    padding: 16px 70px;
     background: #fff;
 }
 
@@ -798,8 +823,8 @@ a.search-select:active {
 .search-right-size {
     margin: 0 auto;
     float: right;
-    width: 40px;
-    padding-top: 30px;
+    width: 35px;
+    padding-top: 24px;
     padding-right: 73px;
     background: #fff;
     border-top: 0px;
@@ -861,7 +886,8 @@ a.search-down:active {
     /*width: 1200px;*/
     margin: 0px;
     border-top: 2px solid #f2f2f2;
-    padding: 30px 70px;
+    padding: 43px 73px;
+    padding-bottom: 6px;
     background: #fff;
     box-sizing: border-box;
 }
@@ -930,19 +956,21 @@ a.found-info-title:active {
 }
 
 .found-houses-type { /*--блок с гостиницей*/
-    width: 120px;
+    width: 115px;
     float: left;
-    line-height: 21px;
+    line-height: 10px;
 }
 
 .found-houses-price { /*--блок с ценой*/
     width: 70px;
     float: left;
+    line-height: 10px;
 }
 
 .found-button { /*--блок с кнопками подробнее и забронировать*/
     width: 270px;
     float: left;
+    padding-top: 5px;
 
 }
 
@@ -1057,7 +1085,7 @@ footer {
 }
 
 .link-first {
-    padding-top: 10px;
+    padding-top: 25px;
     float: left;
     width: 400px;
     margin: 0px auto;
@@ -1067,6 +1095,7 @@ footer {
 .link-second {
     float: left;
     width: 400px;
+    padding-top: 15px;
     margin: 0px auto;
     text-align: center;
 }
@@ -1075,6 +1104,7 @@ footer {
     float: right;
     width: 400px;
     margin: 0px auto;
+    padding-top: 20px;
     text-align: center;
 }
 
@@ -1136,6 +1166,7 @@ a.social-btn-youtube:active {
     font-size: 14px;
     color: black;
     margin: 0 auto;
+    padding-left: 4px;
     text-decoration: none;
     text-align: center;
     float: left;

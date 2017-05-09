@@ -40,7 +40,9 @@
     </section>
     <section class="city container clearfix"><!--блок Настоящий городок с картинкой-->
       <div class="city-description">
-        <h3 class="city properties-white-h3">Настоящий городок</h3>
+        <h3 class="city properties-white-h3">
+          <span class="city-description-name">Настоящий городок</span>
+        </h3>
         <p class="properties-white-h4">- №1 -</p>
         <p class="properties-white-h4">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
       </div>
@@ -52,17 +54,17 @@
     </section>
     <section class="pluses-1 container clearfix"><!-- блок с жильем, едой, сувенирами -->
       <div class="pluses-block-1">
-        <img src="img/house.png">
+        <img src="img/house.png" alt="house">
         <h3 class="properties-black-h3">Жилье</h3>
         <p class="pluses-block-motel properties-black-h4">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
       </div>
       <div class="pluses-block-1">
-        <img src="img/hamburger.png">
+        <img src="img/hamburger.png" alt="hamburger">
         <h3 class="properties-black-h3">Еда</h3>
         <p class="pluses-block-about properties-black-h4">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
       </div>
       <div class="pluses-block-1">
-        <img src="img/present.png">
+        <img src="img/present.png" alt="present">
         <h3 class="properties-black-h3">Сувениры</h3>
         <p class="pluses-block-about properties-black-h4">Не только китайского, но и местного производства!</p>
       </div>
@@ -75,24 +77,32 @@
         </figure> -->
       </div>
       <div class="roсks-description">
-        <h3 class="properties-white-h3">Там есть мост дьявола</h3>
+        <h3 class="properties-white-h3">
+          <span class="roсks-description-name">Там есть<br>мост дьявола</span>
+        </h3>
         <p class="properties-white-h4">- №2 -</p>
         <p class="properties-white-h4">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
       </div>
     </section>
     <section class="pluses-2 container clearfix"><!-- блоки Площадь, Дорога, туристы -->
       <div class="pluses-block-2">
-        <h3 class="properties-black-h3">Небольшая площадь</h3>
+        <h3 class="properties-black-h3">
+          <span class="pluses-2-name">Небольшая площадь</span>
+        </h3>
         <p class="pluses-block-subtitle properties-black-h4">- №3 -</p>
         <p class="pluses-block-about properties-black-h4">Все достопримечательности находятся очень близко</p>
       </div>
       <div class="pluses-block-2">
-        <h3 class="properties-black-h3">Красивая дорога</h3>
+        <h3 class="properties-black-h3">
+          <span class="pluses-2-name">Красивая дорога</span>
+        </h3>
         <p class="pluses-block-subtitle properties-black-h4">- №4 -</p>
         <p class="pluses-block-about properties-black-h4">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
       </div>
       <div class="pluses-block-2">
-        <h3 class="properties-black-h3">Мало туристов</h3>
+        <h3 class="properties-black-h3">
+          <span class="pluses-2-name">Мало туристов</span>
+        </h3>
         <p class="pluses-block-subtitle properties-black-h4">- №5 -</p>
         <p class="pluses-block-about properties-black-h4">Большинство едет в Гранд Каньон и толпится там</p>
       </div>
@@ -139,34 +149,37 @@
 
 
           <div class="people">
-            <label class="booking-form-label" for="booking-audit-adult">
+            <div class="booking-form-label">
               <span class="name-date-1">Взрослые:</span>
-            </label>
-
-            <label class="adults">
-              <a class="adults" href="#">
-                <img src="img/minus.png" alt="minus">
-              </a>
-              <input class="small" type="text" id="booking-audit-adult" value="2" required>
-              <a href="#">
-                <img src="img/plus.png" alt="plus">
-              </a>
-            </label>
+            </div>
+            <div class="small">
+              <label class="adults">
+                <a class="minus" href="#">
+                  <img src="img/minus.png" alt="minus">
+                </a>
+                <input class="small" type="text" id="booking-audit-adult" value="2" required>
+                <a class="plus" href="#">
+                  <img src="img/plus.png" alt="plus">
+                </a>
+              </label>
+            </div>
           </div>
 
           <div class="kids">
-            <label class="booking-form-label" for="booking-audit-kids">
+            <div class="booking-form-label">
               <span class="name-date-2">Дети:</span>
-            </label>
-            <label>
-              <a href="#">
-                <img src="img/minus.png" alt="minus">
-              </a>
-              <input class="small" type="text" id="booking-audit-kids" value="0" required>
-              <a href="#">
-                <img src="img/plus.png" alt="plus">
-              </a>
-            </label>
+            </div>
+            <div class="small">
+              <label>
+                <a class="minus" href="#">
+                  <img src="img/minus.png" alt="minus">
+                </a>
+                <input class="small" type="text" id="booking-audit-kids" value="0" required>
+                <a class="plus" href="#">
+                  <img src="img/plus.png" alt="plus">
+                </a>
+              </label>
+            </div>
           </div>
 
           <input class="btn-form" type="button" value="Найти" />
@@ -185,12 +198,12 @@
   <footer class="container">
     <div class="container clearfix">
       <section class="link-first">
-        <a class="hashtag properties-black-h3" href="#">#visitsedona</p>
+        <a class="hashtag properties-black-h3" href="#">#visitsedona</a>
       </section>
       <section class="link-second">
-        <a class="social-btn social-btn-twitter" href="https://twitter.com/">Twitter</a><!-- иконка твиттера png-->
-        <a class="social-btn social-btn-facebook" href="https://www.facebook.com/">Facebook</a><!-- иконка контакта png-->
-        <a class="social-btn social-btn-youtube" href="http://www.youtube.com/">Youtube</a><!-- иконка ютуба png-->
+        <a class="social-btn social-btn-twitter" href="https://twitter.com">Twitter</a><!-- иконка твиттера png-->
+        <a class="social-btn social-btn-facebook" href="https://www.facebook.com">Facebook</a><!-- иконка контакта png-->
+        <a class="social-btn social-btn-youtube" href="http://www.youtube.com">Youtube</a><!-- иконка ютуба png-->
       </section>
       <section class="link-third">
         <span class="html-ac">website by </span>
