@@ -19,7 +19,7 @@
         <li><a href="#">Фото и видео</a></li>
          <li><a class="menu-logo" href="index.html"><img src="img/logo.png" alt=""></a></li><!--добавить картинку логотипа menu-logo.png-->
 
-        <li><a href="#">Карта штата</a></li>
+        <li class="menu-maps"><a href="#">Карта штата</a></li>
         <li><a href="hotels.html">Гостиницы</a></li>
       </ul>
     </nav>
@@ -124,24 +124,24 @@
         </div>
         <form class="form-index" method="post" action="/search">
           <div class="arrive">
-            <label class="booking-form-label" for="booking-arrive-date">
-              <span class="name-date-arr">Дата заезда:</span>
+            <label class="name-date-arr" for="booking-arrive-date">
+              Дата заезда:
             </label>
             <label>
-              <a class="arrive-cal" href="#">
-                <img src="img/calendar.png" alt="calendar">
+              <a class="arrdep-cal" href="#">
+                <!-- <img src="img/calendar.png" alt="calendar"> -->
               </a>
               <input class="big" type="text" name="date-of-arrive" value="24 апреля 2017" id="booking-arrive-date">
             </label>
           </div>
 
           <div class="departure">
-            <label class="booking-form-label" for="booking-departure-date">
-              <span class="name-date-dep">Дата выезда:</span>
+            <label class="name-date-dep" for="booking-departure-date">
+              Дата выезда:
             </label>
             <label>
-              <a class="departure-cal" href="#">
-                <img src="img/calendar.png" alt="calendar">
+              <a class="arrdep-cal" href="#">
+                <!-- <img src="img/calendar.png" alt="calendar"> -->
               </a>
               <input type="text" name="date-of-departure" value="4 июля 2017" id="booking-departure-date">
             </label>
@@ -150,16 +150,16 @@
 
           <div class="people">
             <div class="booking-form-label">
-              <span class="name-date-1">Взрослые:</span>
+              <label class="name-date-1">Взрослые:</label>
             </div>
             <div class="small">
               <label class="adults">
                 <a class="minus" href="#">
-                  <img src="img/minus.png" alt="minus">
+                  <!-- <img src="img/minus.png" alt="minus"> -->
                 </a>
                 <input class="small" type="text" id="booking-audit-adult" value="2" required>
                 <a class="plus" href="#">
-                  <img src="img/plus.png" alt="plus">
+                  <!-- <img src="img/plus.png" alt="plus"> -->
                 </a>
               </label>
             </div>
@@ -167,16 +167,16 @@
 
           <div class="kids">
             <div class="booking-form-label">
-              <span class="name-date-2">Дети:</span>
+              <label class="name-date-2">Дети:</label>
             </div>
             <div class="small">
               <label>
                 <a class="minus" href="#">
-                  <img src="img/minus.png" alt="minus">
+                  <!-- <img src="img/minus.png" alt="minus"> -->
                 </a>
                 <input class="small" type="text" id="booking-audit-kids" value="0" required>
                 <a class="plus" href="#">
-                  <img src="img/plus.png" alt="plus">
+                  <!-- <img src="img/plus.png" alt="plus"> -->
                 </a>
               </label>
             </div>

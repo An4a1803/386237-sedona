@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
 body {
     font-size: 14px;
     color: #000;
     line-height: 21px;
     font-weight: bold;
-    font-family: "PT Sans", "Sample", sans-serif;
+    font-family: "PT Sans", "Tahoma", sans-serif;
     text-transform: uppercase;
     background-color: #f2f2f2;
     margin: 0;
@@ -12,9 +14,9 @@ body {
 
 /*НАЧАЛО основные свойства боди*/
 .clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
+    content: "";
+    display: table;
+    clear: both;
 }
 
 h2 {
@@ -83,8 +85,16 @@ header {
     color: #000;
     text-decoration: none;
     display: block;
-    padding: 15px 70px;
+    padding: 15px 68px;
 }
+
+li a:nth-child(4) {
+  padding-left: 71px;
+}
+
+/*.menu-navigator a:nth-child(5), {
+    width: 83px;
+}*/
 
 a.menu-logo img {
     position: absolute;
@@ -92,7 +102,6 @@ a.menu-logo img {
     right: 0;
     margin: -15px auto;
     background-position: center;
-
 }
 
 .menu-navigator li {
@@ -113,15 +122,15 @@ a.menu-logo img {
 }
 
 .menu-navigator a:hover {
-  color: #81b3d2;
+    color: #81b3d2;
 }
 
 .menu-navigator a:active {
-  color: #eee;
+    color: #eee;
 }
 
 .menu-navigator a: .... {  /*как сделать цвет для ссылки активной, т.е. находимся на странице???*/
-  color: #766357;
+    color: #766357;
 }
 
 /*КОНЕЦ ХЕДЕР*/
@@ -145,7 +154,7 @@ img.card-sedona {
     margin: 0 auto;
     padding: 0px;
     background: url(img/background-1.jpg);
- }
+}
 
 .card-welcome {
     position: absolute;
@@ -351,7 +360,7 @@ img.card-sedona {
 
 .search-link-block {
     background: #766357;
-    padding: 33px 140px;
+    padding: 33px;
     font-size: 21px;
     font-weight: bold;
     text-align: center;
@@ -371,28 +380,31 @@ form.form-index {
     box-sizing: border-box;
 }
 
-span.name-date-arr {
+label.name-date-arr {
   float: left;
-  /*line-height: 50px;*/
   padding-right: 20px;
   padding-top: 7px;
 }
 
-span.name-date-dep {
+label.name-date-dep {
   float: left;
   padding-top: 45px;
 }
 
-span.name-date-1 {
+label.name-date-1 {
   float: left;
-  padding-right: 40px;
+  /*padding-right: 40px;*/
   padding-top: 10px;
 }
 
-span.name-date-2 {
+label.name-date-2 {
   float: left;
   padding-left: 50px;
   padding-top: 10px;
+}
+
+div.arrive, div.departure {
+  height: 30px;
 }
 
 #booking-arrive-date {
@@ -404,12 +416,15 @@ span.name-date-2 {
   border: none;
 }
 
-.arrive-cal img {
+.arrdep-cal {
+  display: block;
   margin: 0;
   float: right;
-  padding: 7.5px 10px;
-  background-image: url(../img/calendar.png);
-  background: #f2f2f2;
+  padding: 18px 20px;
+  background-image: url("../img/calendar.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #f2f2f2;
 }
 
 #booking-departure-date {
@@ -419,14 +434,6 @@ span.name-date-2 {
   padding-bottom: 8px;
   background: #f2f2f2;
   border: none;
-}
-
-.departure-cal img {
-  margin: 0;
-  float: right;
-  padding: 7.5px 10px;
-  background-image: url(../img/calendar.png);
-  background: #f2f2f2;
 }
 
 div.people {
@@ -445,6 +452,7 @@ div.kids {
 
 div.booking-form-label {
   float: left;
+  height: 30px;
 }
 
 div.small {
@@ -452,30 +460,38 @@ div.small {
   width: 117px;
 }
 
-a.minus {
+.minus {
     float: left;
-    width: 30px;
-    background: #f2f2f2;
-    padding-top: 10px;
-    padding-bottom: 16px;
-    padding-left: 10px;
+    display: block;
+    background-image: url(../img/minus.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #f2f2f2;
+    padding-top: 15px;
+    padding-right: 13px;
+    padding-left: 15px;
+    padding-bottom: 26px;
 }
 
-a.plus {
+.plus {
     float: right;
-    width: 30px;
-    background: #f2f2f2;
-    padding-top: 12px;
-    padding-bottom: 14px;
-    padding-left: 9px;
+    display: block;
+    background-image: url(../img/plus.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #f2f2f2;
+    padding-top: 15px;
+    padding-right: 13px;
+    padding-left: 15px;
+    padding-bottom: 26px;
 }
 
 input.small {
   display: inline-block;
-  width: 38px;
+  width: 61px;
   font-size: 14px;
   text-align: center;
-  padding: 13px;
+  padding: 10px;
   border: none;
   background: #f2f2f2;
 }
