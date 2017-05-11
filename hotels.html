@@ -7,16 +7,15 @@
   <meta name="keywords" content="отдых в Аризоне, Аризона, Седона, мотель, отель, гостиница, апартаменты, вилла, бассейн, спа, мост дьявола, туризм, отдых">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="#" type="image/x-icon">
-  <!--добавить Фавикон-->
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
   <body>
     <header class="container">
-      <nav class="menu-navigator container clearfix">
+      <nav class="menu-navigator container clearfix"><!--==========******БЛОК - МЕНЮ-НАВИГАЦИЯ******==========-->
       <ul>
         <li><a href="#">Информация</a></li>
         <li><a href="#">Фото и видео</a></li>
-         <li><a class="menu-logo" href="index.html"><img src="img/logo.png" alt=""></a></li><!--добавить картинку логотипа menu-logo.png-->
+        <li><a class="menu-logo" href="index.html"><img src="img/logo.png" alt=""></a></li><!--добавить картинку логотипа menu-logo.png-->
         <li class="menu-maps"><a href="#">Карта штата</a></li>
         <li class="menu-hotels"><a href="hotels.html">Гостиницы</a></li>
       </ul>
@@ -24,205 +23,200 @@
     </header>
     <main class="hotels container">
       <div class="background-filter">
-        <section class="filter container clearfix">
+        <section class="filter container clearfix"><!--==========******БЛОК - ФИЛЬТР ВЫБОРА ОТЕЛЯ******==========-->
           <form method="post" action="/">
-          <div class="filter-inf-house">
-            <div class="filter-infrastructure">
-              <h3 class="filter-infrastructure-title">Инфраструктура:</h3>
-              <div class="filter-div">
+            <div class="filter-inf-house">
+              <div class="filter-infrastructure"><!--==========******БЛОК - ИНФРАСТРУКТУРА******==========-->
+                <h3 class="filter-infrastructure-title">Инфраструктура:</h3>
                 <input id="cfirst" type="checkbox" name="first" checked hidden />
                 <label class="filter-select" for="cfirst">
                   <span class="filter-name">Бассейн</span>
                 </label>
-              </div>
 
                 <input id="csecond" type="checkbox" name="second" hidden />
                 <label class="filter-select" for="csecond">
                   <span class="filter-name">Парковка</span>
                 </label>
+
                 <input id="cthird" type="checkbox" name="third" hidden />
                 <label class="filter-select" for="cthird">
                   <span class="filter-name">Wi-fi</span>
                 </label>
-            </div>
-            <div class="filter-houses">
-              <h3 class="filter-houses-title">Тип жилья:</h3>
-              <input id="cfourth" type="checkbox" name="fourth" checked hidden />
+              </div>
+
+              <div class="filter-houses"><!--==========******БЛОК - ТИПЫ ЖИЛЬЯ******==========-->
+                <h3 class="filter-houses-title">Тип жилья:</h3>
+                <input id="cfourth" type="checkbox" name="fourth" checked hidden />
                 <label class="filter-select" for="cfourth">
-                  <span class="filter-name">Гостиница</span>
+                  <span class="filter-name-1">Гостиница</span>
                 </label>
+
                 <input id="cfifth" type="checkbox" name="fifth" checked hidden />
                 <label class="filter-select" for="cfifth">
-                  <span class="filter-name">Мотель</span>
+                  <span class="filter-name-1">Мотель</span>
                 </label>
+
                 <input id="csix" type="checkbox" name="six" checked hidden />
                 <label class="filter-select" for="csix">
-                  <span class="filter-name">Апартаменты</span>
+                  <span class="filter-name-1">Апартаменты</span>
                 </label>
+              </div>
             </div>
-          </div>
-<!-- НАЧАЛО Блок с ползунками справа-->
-          <div class="filter-range">
-            <div class="filter-range-title">Стоимость в сутки (р):</div>
-            <div class="price-controls">
-              <label class="min-price">от <input type="text" name="min-price" value="0"></label>
-              <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
-            </div>
-            <div class="range-controls">
-              <div class="scale">
+
+            <div class="filter-range"><!--==========******НАЧАЛО БЛОК - ПОЛЗУНКИ СПРАВА******==========-->
+              <div class="filter-range-title">Стоимость в сутки (р):</div>
+              <div class="price-controls">
+                <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+              </div>
+              <div class="range-controls">
+                <div class="scale">
                 <div class="bar"></div>
               </div>
               <div class="range-toggle range-toggle-min"></div>
               <div class="range-toggle range-toggle-max"></div>
             </div>
-            <button class="btn-transparent" type="submit">Показать</button>
+            <div class="btn-range">
+             <button class="btn-transparent" type="submit">Показать</button>
+            </div><!--==========******КОНЕЦ БЛОК - ПОЛЗУНКИ СПРАВА******==========-->
           </div>
-<!-- КОНЕЦ Блок с ползунками справа-->
-
         </form>
       </section>
     </div>
-      <!-- блок с сортировкой и стреклками-->
-      <div class="search container clearfix">
-      <div class="search-left-size">
-        <span class="search-found properties-black-h3">Найдено: 3</span>
-        <span class="search-sorting">Сортировка:</span>
-        <a href="#" class="search-select search-price">По цене</a>
-        <a href="#" class="search-select search-type">По типу</a>
-        <a href="#" class="search-select search-rating">По рейтингу</a>
-      </div>
-      <!--НАЧАЛО  блок со стрелками вниз/вверх -->
-      <div class="search-right-size">
-        <a class="search-up" href="#">
-          <!-- <img src="img/corner-up-gray.png"> -->
-        </a>
-        <a class="search-down" href="#">
-          <!-- <img src="img/corner-down-gray.png"> -->
-        </a>
+      <div class="search container clearfix"><!--==========******БЛОК С СОРТИРОВКОЙ ОТЕЛЕЙ******==========-->
+        <div class="search-left-size">
+          <span class="search-found properties-black-h3">Найдено: 3</span>
+          <span class="search-sorting">Сортировка:</span>
+          <a href="#" class="search-select search-price">По цене</a>
+          <a href="#" class="search-select search-type">По типу</a>
+          <a href="#" class="search-select search-rating">По рейтингу</a>
+        </div>
+        <div class="search-right-size"><!--==========******БЛОК СТРЕЛКИ СПРАВА******==========-->
+          <a class="search-up" href="#">
+            <!-- <img src="img/corner-up-gray.png"> -->
+          </a>
+          <a class="search-down" href="#">
+            <!-- <img src="img/corner-down-gray.png"> -->
+          </a>
+        </div>
       </div>
 
-      <!--КОНЕЦ  блок со стрелками вниз/вверх -->
-    </div>
-
-<!--НАЧАЛО БЛОК С ОТЕЛЕМ АМАРА-->
-  <div class="found clearfix"> <!--общий для всех блоков-->
-    <div class="found-houses clearfix"><!--общий для блока с рисунком и отелем-->
-      <div class="found-houses-img"><!--блок с рисунком-->
+  <div class="found-1 clearfix"><!--==========******НАЧАЛО С ОТЕЛЕМ АМАРА******==========-->
+    <div class="found-houses clearfix">
+      <div class="found-houses-img">
         <img class="houses-img" src="img/amara-resort.jpg" alt="Amara resort & spa">
-      </div><!--блок с рисунком-->
-      <div class="found-houses-all clearfix"><!--общий для отеля, гостиницей. ценой-->
-        <div class="found-houses-info"><!--(блок с названием отеля)-->
+      </div>
+      <div class="found-houses-all clearfix">
+        <div class="found-houses-info">
           <a class="found-info-title properties-black-h3" href="#">Amara resort & spa</a>
-        </div><!--(блок с названием отеля)-->
-        <div class="found-about clearfix"><!--(блок с гостиницей и 4000р)-->
-          <div class="found-houses-type"><!--(блок с гостиницей)-->
+        </div>
+        <div class="found-about clearfix">
+          <div class="found-houses-type">
             <p class="found-houses-type properties-black-h4">Гостиница</p>
-          </div><!--(блок с гостиницей)-->
-          <div class="found-houses-price"><!--(блок с 4000р)-->
+          </div>
+          <div class="found-houses-price">
             <p class="found-about-price properties-black-h4">от 4000 р.</p>
-          </div><!--(блок с 4000р)-->
-          </div><!--(блок с гостиницей и 4000р)-->
-          <div class="found-button clearfix"><!--(блок с кнопками подробнее и забронировать)-->
-            <div class="found-button-type-1"><!--(блок с кнопками подробнее)-->
+          </div>
+          </div>
+          <div class="found-button clearfix">
+            <div class="found-button-type-1">
               <a class="found-button-more" href="#">Подробнее</a>
-            </div><!--(блок с кнопками подробнее)-->
-            <div class="found-button-type-2"><!--(блок с кнопками забронировать)-->
+            </div>
+            <div class="found-button-type-2">
               <a class="found-button-book" href="#">Забронировать</a>
-            </div><!--(блок с кнопками забронировать)-->
-          </div><!--(блок с кнопками подробнее и забронировать)-->
-        </div><!--общий для отеля, гостиницей. ценой-->
-      </div><!--общий для блока с рисунком и отелем-->
-      <div class="rating clearfix"><!--общий для блока со звездами и рейтингом-->
-        <div class="rating-stars"><!--блок со звездами-->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rating clearfix">
+        <div class="rating-stars">
           <img src="img/stars-4.png" alt="stars-4">
-        </div><!--блок со звездами-->
-        <div class="rating-number"><!--блок с рейтингом-->
+        </div>
+        <div class="rating-number">
           <p>Рейтинг: 8.5</p>
-        </div><!--блок с рейтингом-->
-      </div><!--общий для блока со звездами и рейтингом-->
-    </div><!--общий для всех блоков-->
-<!--КОНЕЦ БЛОК С ОТЕЛЕМ АМАРА-->
+        </div>
+      </div>
+    </div><!--==========******КОНЕЦ БЛОК С ОТЕЛЕМ АМАРА******==========-->
 
-<!--НАЧАЛО БЛОК С ОТЕЛЕМ DESERT-->
-<div class="found clearfix"> <!--общий для всех блоков-->
-    <div class="found-houses clearfix"><!--общий для блока с рисунком и отелем-->
-      <div class="found-houses-img"><!--блок с рисунком-->
+
+
+  <div class="found-1 clearfix"><!--==========******НАЧАЛО БЛОКА С ОТЕЛЕМ Desert Qual Inn******==========-->
+    <div class="found-houses clearfix">
+      <div class="found-houses-img">
         <img class="houses-img" src="img/desert-quail.jpg" alt="Desert Qual Inn">
-      </div><!--блок с рисунком-->
-      <div class="found-houses-all clearfix"><!--общий для отеля, гостиницей. ценой-->
-        <div class="found-houses-info"><!--(блок с названием отеля)-->
+      </div>
+      <div class="found-houses-all clearfix">
+        <div class="found-houses-info">
           <a class="found-info-title properties-black-h3" href="#">Desert Qual Inn</a>
-        </div><!--(блок с названием отеля)-->
-        <div class="found-about clearfix"><!--(блок с гостиницей и 4000р)-->
-          <div class="found-houses-type"><!--(блок с гостиницей)-->
+        </div>
+        <div class="found-about clearfix">
+          <div class="found-houses-type">
             <p class="found-houses-type properties-black-h4">Мотель</p>
-          </div><!--(блок с гостиницей)-->
-          <div class="found-houses-price"><!--(блок с 4000р)-->
+          </div>
+          <div class="found-houses-price">
             <p class="found-about-price properties-black-h4">от 3000 р.</p>
-          </div><!--(блок с 4000р)-->
-          </div><!--(блок с гостиницей и 4000р)-->
-          <div class="found-button clearfix"><!--(блок с кнопками подробнее и забронировать)-->
-            <div class="found-button-type-1"><!--(блок с кнопками подробнее)-->
+          </div>
+          </div>
+          <div class="found-button clearfix">
+            <div class="found-button-type-1">
               <a class="found-button-more" href="#">Подробнее</a>
-            </div><!--(блок с кнопками подробнее)-->
-            <div class="found-button-type-2"><!--(блок с кнопками забронировать)-->
+            </div>
+            <div class="found-button-type-2">
               <a class="found-button-book" href="#">Забронировать</a>
-            </div><!--(блок с кнопками забронировать)-->
-          </div><!--(блок с кнопками подробнее и забронировать)-->
-        </div><!--общий для отеля, гостиницей. ценой-->
-      </div><!--общий для блока с рисунком и отелем-->
-      <div class="rating clearfix"><!--общий для блока со звездами и рейтингом-->
-        <div class="rating-stars"><!--блок со звездами-->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rating clearfix">
+        <div class="rating-stars">
           <img src="img/stars-3.png" alt="stars-3">
-        </div><!--блок со звездами-->
-        <div class="rating-number"><!--блок с рейтингом-->
+        </div>
+        <div class="rating-number">
           <p>Рейтинг: 8.9</p>
-        </div><!--блок с рейтингом-->
-      </div><!--общий для блока со звездами и рейтингом-->
-    </div><!--общий для всех блоков-->
-<!--КОНЕЦ БЛОК С ОТЕЛЕМ DESERT-->
+        </div>
+      </div>
+    </div><!--==========******КОНЕЦ БЛОКА С ОТЕЛЕМ Desert Qual Inn******==========-->
 
-<!--НАЧАЛО БЛОК С ОТЕЛЕМ VILLAS AT POCO-->
-<div class="found clearfix"> <!--общий для всех блоков-->
-    <div class="found-houses clearfix"><!--общий для блока с рисунком и отелем-->
-      <div class="found-houses-img"><!--блок с рисунком-->
+
+  <div class="found-1 clearfix"><!--==========******НАЧАЛО С ОТЕЛЕМ VILLAS AT POCO******==========-->
+    <div class="found-houses clearfix">
+      <div class="found-houses-img">
         <img class="houses-img" src="img/villas-poco.jpg" alt="Villas at Poco Diablo">
-      </div><!--блок с рисунком-->
-      <div class="found-houses-all clearfix"><!--общий для отеля, гостиницей. ценой-->
-        <div class="found-houses-info"><!--(блок с названием отеля)-->
+      </div>
+      <div class="found-houses-all clearfix">
+        <div class="found-houses-info">
           <a class="found-info-title properties-black-h3" href="#">Villas at Poco Diablo</a>
-        </div><!--(блок с названием отеля)-->
-        <div class="found-about clearfix"><!--(блок с гостиницей и 4000р)-->
-          <div class="found-houses-type"><!--(блок с гостиницей)-->
+        </div>
+        <div class="found-about clearfix">
+          <div class="found-houses-type">
             <p class="found-houses-type properties-black-h4">Апартаменты</p>
-          </div><!--(блок с гостиницей)-->
-          <div class="found-houses-price"><!--(блок с 4000р)-->
+          </div>
+          <div class="found-houses-price">
             <p class="found-about-price properties-black-h4">от 2000 р.</p>
-          </div><!--(блок с 4000р)-->
-          </div><!--(блок с гостиницей и 4000р)-->
-          <div class="found-button clearfix"><!--(блок с кнопками подробнее и забронировать)-->
-            <div class="found-button-type-1"><!--(блок с кнопками подробнее)-->
+          </div>
+          </div>
+          <div class="found-button clearfix">
+            <div class="found-button-type-1">
               <a class="found-button-more" href="#">Подробнее</a>
-            </div><!--(блок с кнопками подробнее)-->
-            <div class=" found-button-type-2"><!--(блок с кнопками забронировать)-->
+            </div>
+            <div class=" found-button-type-2">
               <a class="found-button-book" href="#">Забронировать</a>
-            </div><!--(блок с кнопками забронировать)-->
-          </div><!--(блок с кнопками подробнее и забронировать)-->
-        </div><!--общий для отеля, гостиницей. ценой-->
-      </div><!--общий для блока с рисунком и отелем-->
-      <div class="rating clearfix"><!--общий для блока со звездами и рейтингом-->
-        <div class="rating-stars"><!--блок со звездами-->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rating clearfix">
+        <div class="rating-stars">
           <img src="img/stars-2.png" alt="stars-2">
-        </div><!--блок со звездами-->
-        <div class="rating-number"><!--блок с рейтингом-->
+        </div>
+        <div class="rating-number">
           <p>Рейтинг: 9.2</p>
-        </div><!--блок с рейтингом-->
-      </div><!--общий для блока со звездами и рейтингом-->
-    </div><!--общий для всех блоков-->
-<!--КОНЕЦ БЛОК С ОТЕЛЕМ VILLAS AT POCO-->
+        </div>
+      </div>
+    </div><!--==========******КОНЕЦ С ОТЕЛЕМ VILLAS AT POCO******==========-->
 
   </main>
-  <footer class="container">
+  <footer class="container"><!--==========******БЛОК - ФУТЕР******==========-->
     <div class="container clearfix">
       <section class="link-first">
         <a class="hashtag properties-black-h3" href="#">#visitsedona</a>
