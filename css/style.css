@@ -699,7 +699,7 @@ input[type="checkbox"]:checked:disabled + label::before {
 
 /*КОНЕЦ ЧЕКБОКСЫ*/
 .filter-houses-title {
-  padding-left: 5px:;
+  padding-left: 5px;
 }
 
 .filter-houses {
