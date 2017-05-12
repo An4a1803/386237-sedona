@@ -10,7 +10,7 @@ body {
   display:block;
 }
 
-/*НАЧАЛО основные свойства боди*/
+/*НАЧАЛО*** основные свойства боди*/
 .clearfix::after {
   content: "";
   display: table;
