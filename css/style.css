@@ -155,7 +155,7 @@ img.card-sedona {
 
 .card-welcome {
   position: absolute;
-  width: 460px;   /*как задать положение по центру надприси? Обернуть в блок + :before ???*/
+  width: 460px;
 }
 
 /*НАЧАЛО Секция с СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК*/
