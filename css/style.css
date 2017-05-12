@@ -126,6 +126,10 @@ a.menu-logo img {
 .menu-navigator a: .... {  /*как сделать цвет для ссылки активной, т.е. находимся на странице???*/
   color: #766357;
 }
+
+a.menu-active {
+  color: #766357;
+}
 /*КОНЕЦ ХЕДЕР*/
 
 /*НАЧАЛО MAIN*/
@@ -361,7 +365,7 @@ p.rocks-p {
 .form-index input {
   font-size: 14px;
   line-height: 21px;
-  font-family: "PT Sans", "Sample", sans-serif;
+  font-family: "PT Sans", "Tahoma", sans-serif;
   font-weight: bold;
   color: #000;
   text-transform: uppercase;
@@ -648,10 +652,10 @@ main.hotels {
 /*НАЧАЛО ЧЕКБОКСЫ*/
 
 label.filter-select {
-  width: 100px;
+  /*width: 100px;*/
   padding-top: 5px;
   padding-bottom: 20px;
-  /*height: 26px;*/
+
   display: block;
   position: relative;
 }
@@ -892,6 +896,10 @@ a.search-price, a.search-type {
   width: 50px;
 }
 
+a.menu-active-blue {
+  color: #81b3d2;
+}
+
 a.search-select:after {
   content: '';
   display: block;
@@ -939,7 +947,6 @@ a.search-up {
   float: left;
 }
 
-
 a.search-down {
   width: 0;
   height: 0;
@@ -961,13 +968,7 @@ a.search-down:hover {
   border-color: #000 transparent transparent transparent;
 }
 
-a.search-up:active {
-  border-style: solid;
-  border-width: 0 5px 10px 5px;
-  border-color: transparent transparent #81b3d2 transparent;
-}
-
-a.search-down:active {
+a.menu-active-down {
   border-style: solid;
   border-width: 10px 5px 0 5px;
   border-color: #81b3d2 transparent transparent transparent;
