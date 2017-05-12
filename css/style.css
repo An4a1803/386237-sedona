@@ -123,7 +123,7 @@ a.menu-logo img {
   color: #eee;
 }
 
-.menu-navigator a: .... {  /*как сделать цвет для ссылки активной, т.е. находимся на странице???*/
+.menu-navigator a: {
   color: #766357;
 }
 
