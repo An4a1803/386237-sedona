@@ -396,7 +396,7 @@ form.form-index {
 
 label.name-date-arr {
   float: left;
-  padding-right: 20px;
+  /*padding-right: 20px;*/
   padding-top: 7px;
 }
 
@@ -425,23 +425,25 @@ div.arrive, div.departure {
 
 
 /*==========***БЛОКИ С INPUT - ЗАЕЗДА-ВЫЕЗДА***=========== */
-#booking-arrive-date {
+#booking-arrive-date, #booking-departure-date {
   background: transparent;
   border: none;
-  width: 270px;
+  width: 285px;
   outline: none;
   padding: 8px 13px;
 }
 
-#booking-departure-date {
-  background: transparent;
-  border: none;
-  width: 270px;
-  outline: none;
-  padding: 8px 13px;
+#booking-arrive-date:hover, #booking-departure-date:hover {
+  background: #ebebeb;
 }
 
-.arrdep-cal { /*===***КАЛЕНДАРЬ***===*/
+#booking-arrive-date:focus, #booking-departure-date:focus {
+  background: #fff;
+  border: 2px solid #f2f2f2;
+}
+
+
+a.arrdep-cal { /*===***КАЛЕНДАРЬ***===*/
   display: block;
   /*position: absolute;*/
   height: 35px;
@@ -455,15 +457,24 @@ div.arrive, div.departure {
   background-color: #f2f2f2;
 }
 
+a.arrdep-cal:hover {
+  background: url("../img/calendar-black.png") no-repeat center;
+}
+
+a.arrdep-cal:active {
+  background: url("../img/calendar-blue.png") no-repeat center;
+}
+
 div.big {
   width: 350px;
   min-height: 38px;
   float: right;
-  margin-bottom: 30px;
+  /*margin-bottom: 30px;*/
   background: #f2f2f2;
-
   border: none;
-}/*==========***БЛОКИ С INPUT - ДАТА ЗАЕЗДА - ВЫЕЗДА***=========== */
+}
+/*==========***БЛОКИ С INPUT - ДАТА ЗАЕЗДА - ВЫЕЗДА***=========== */
+
 
 
 div.people {
@@ -491,41 +502,50 @@ div.small {
   border: none;
 }
 
-.minus {
+a.minus {
   float: left;
   display: block;
   height: 30px;
   width: 30px;
   margin: 0;
   padding-top: 5px;
-  /*position: absolute;*/
+
   background-image: url(../img/minus.png);
   background-position: center;
   background-repeat: no-repeat;
   background-color: #f2f2f2;
-  /*padding-top: 15px;
-  padding-right: 13px;
-  padding-left: 15px;
-  padding-bottom: 26px;*/
 }
 
-.plus {
+a.minus:hover {
+  background: url("../img/minus-black.png") no-repeat center;
+}
+
+a.minus:active {
+  background: url("../img/minus-blue.png") no-repeat center;
+}
+
+a.plus {
   display: block;
   float: right;
   height: 30px;
   width: 30px;
   margin: 0;
   padding-top: 5px;
-  /*position: absolute;*/
+
   background-image: url(../img/plus.png);
   background-position: center;
   background-repeat: no-repeat;
   background-color: #f2f2f2;
-  /*padding-top: 15px;
-  padding-right: 13px;
-  padding-left: 15px;
-  padding-bottom: 26px;*/
 }
+
+a.plus:hover {
+  background: url("../img/plus-black.png") no-repeat center;
+}
+
+a.plus:active {
+  background: url("../img/plus-blue.png") no-repeat center;
+}
+
 
 #booking-audit-adult {
   background: transparent;
@@ -750,6 +770,7 @@ input[type="checkbox"]:checked:disabled + label::before {
 .price-controls input {
   width: 50px;
   margin: 0;
+  padding-bottom: 20px;
 
   color: inherit;
   font: inherit;
@@ -1169,7 +1190,7 @@ footer {
   float: right;
   width: 400px;
   margin: 0px auto;
-  padding-top: 20px;
+  padding-top: 18px;
   text-align: center;
 }
 
@@ -1225,37 +1246,38 @@ a.social-btn-youtube:active {
   background: #5496bd url("../img/youtube-active.png") no-repeat center;
 }
 
+
+
+div.html-academy {
+  width: 240px;
+  min-height: 38px;
+  padding-left: 58px;
+}
+
 .html-ac {
   font-size: 14px;
   color: black;
   margin: 0 auto;
-  padding-left: 4px;
+  padding-left: 45px;
+  padding-top: 5px;
   text-decoration: none;
   text-align: center;
   float: left;
 }
 
-span.html-ac {
-  padding-top: 7px;
-  padding-right: 5px;
-  margin-left: 100px;
-  float: left;
-}
-
-
-a.html-ac:after {
-  content: '';
+a.html-ac-pic {
+  background: url(../img/html-academy-1.png);
   display: block;
-  width: 100%;
-  opacity: 1;
-  border-bottom: none;
+  width: 113px;
+  height: 39px;
+  float: right;
 }
 
-a.html-ac:hover {
+a.html-ac-pic:hover {
   background: url("../img/html-academy-2.png") no-repeat center;
 }
 
-a.html-ac:active {
+a.html-ac-pic:active {
   background: url("../img/html-academy-3.png") no-repeat center;
 }
 /*КОНЕЦ ФУТЕРА*/
