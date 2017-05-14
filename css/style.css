@@ -62,7 +62,7 @@ h2 {
 /*КОНЕЦ основные свойства боди*/
 
 header, main, footer {
-  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+  box-shadow: 0 10px 15px rgba(0,0,0,0.5);
 }
 
 .container {
@@ -82,8 +82,6 @@ header {
 .menu-navigator a {
   color: #000;
   text-decoration: none;
-  display: block;
-  padding: 15px 68px;
 }
 
 li a:nth-child(4) {
@@ -101,6 +99,7 @@ a.menu-logo img {
 .menu-navigator li {
   display: inline-block;
   position: relative;
+  padding: 15px 0;
   font-size: 14px;
   line-height: 25px;
   vertical-align: top;
@@ -192,7 +191,7 @@ img.card-sedona {
 }
 
 .city-description {
-  width: 33.6%;
+  width: 33.3%;
   background: #81b3d2;
   margin: 0 auto;
   padding: 47px 58px 44px 56px;
@@ -215,7 +214,7 @@ p.city-life {
 
 .city-sedona {
   position: relative;
-  width: 66.4%;
+  width: 66.7%;
   height: 255px;
   background: url(../img/pic-real-city-full.jpg);
   background-position: center;
@@ -295,6 +294,13 @@ p.rocks-p {
   padding-right: 60px;
 }
 
+.pluses-3-name {
+  display: inline-block;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+
 .pluses-block-2 {
   width: 400px;
   margin: 0 auto;
@@ -320,7 +326,7 @@ p.rocks-p {
 /*НАЧАЛО секция с формой*/
 .interest-blok {
   background: #fff;
-  padding-top: 35px;
+  padding-top: 33px;
   padding-bottom: 120px;
 }
 
@@ -345,7 +351,7 @@ p.rocks-p {
 .modal-content {
   position: absolute;
   left: 50%;
-  top: -88px;
+  top: -86px;
   margin-left: -285px;
   width: 570px;
   color: #000;
@@ -374,7 +380,7 @@ p.rocks-p {
 
 .search-link-block {
   background: #766357;
-  padding: 33px;
+  padding: 32px;
   font-size: 21px;
   font-weight: bold;
   text-align: center;
@@ -401,30 +407,32 @@ form.form-index {
 label.name-date-arr {
   float: left;
   /*padding-right: 20px;*/
-  padding-top: 7px;
+  padding-top: 10px;
 }
 
 label.name-date-dep {
   float: left;
-  padding-top: 7px;
+  padding-top: 10px;
 }
 
 label.name-date-1 {
   float: left;
-  padding-top: 10px;
+  padding-top: 8px;
 }
 
 label.name-date-2 {
   float: left;
   padding-left: 50px;
-  padding-top: 10px;
+  padding-top: 8px;
 }/*==========***LABEL - НАЗВАНИЯ ОКОШКА ВВОДА***=========== */
 
 
 /*==========***ВЫСОТА БЛОКОВ ДАТА ЗАЕЗДА-ВЫЕЗДА***=========== */
 div.arrive, div.departure {
+  width: 457px;
   min-height: 38px;
   padding-bottom: 30px;
+  padding-left: 3px;
 }
 
 
@@ -434,7 +442,9 @@ div.arrive, div.departure {
   border: none;
   width: 285px;
   outline: none;
-  padding: 8px 13px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 15px;
 }
 
 #booking-arrive-date:hover, #booking-departure-date:hover {
@@ -447,21 +457,21 @@ div.arrive, div.departure {
 }
 
 
-a.arrdep-cal { /*===***КАЛЕНДАРЬ***===*/
+button.arrdep-cal { /*===***КАЛЕНДАРЬ***===*/
   display: block;
   /*position: absolute;*/
-  height: 35px;
-  width: 35px;
+  height: 38px;
+  width: 38px;
   margin: 0;
   float: right;
-
+  border: 0;
   background-image: url("../img/calendar.png");
   background-position: center;
   background-repeat: no-repeat;
   background-color: #f2f2f2;
 }
 
-a.arrdep-cal:hover {
+button.arrdep-cal:hover {
   background: url("../img/calendar-black.png") no-repeat center;
 }
 
@@ -506,47 +516,51 @@ div.small {
   border: none;
 }
 
-a.minus {
+button.minus {
   float: left;
   display: block;
   height: 30px;
   width: 30px;
-  margin: 0;
-  padding-top: 5px;
+  /*margin: 0;*/
+  margin-top: 3px;
+  margin-left: 5px;
 
+  border: 0;
   background-image: url(../img/minus.png);
   background-position: center;
   background-repeat: no-repeat;
   background-color: #f2f2f2;
 }
 
-a.minus:hover {
+button.minus:hover {
   background: url("../img/minus-black.png") no-repeat center;
 }
 
-a.minus:active {
+button.minus:active {
   background: url("../img/minus-blue.png") no-repeat center;
 }
 
-a.plus {
+button.plus {
   display: block;
   float: right;
   height: 30px;
   width: 30px;
-  margin: 0;
-  padding-top: 5px;
+  /*margin: 0px;*/
+  margin-top: 3px;
+  margin-right: 5px;
 
+  border: 0;
   background-image: url(../img/plus.png);
   background-position: center;
   background-repeat: no-repeat;
   background-color: #f2f2f2;
 }
 
-a.plus:hover {
+button.plus:hover {
   background: url("../img/plus-black.png") no-repeat center;
 }
 
-a.plus:active {
+button.plus:active {
   background: url("../img/plus-blue.png") no-repeat center;
 }
 
@@ -554,7 +568,7 @@ a.plus:active {
 #booking-audit-adult {
   background: transparent;
   border: none;
-  width: 58px;
+  width: 48px;
   text-align: center;
   outline: none;
   padding: 8px 0;
@@ -564,7 +578,7 @@ a.plus:active {
 #booking-audit-kids {
   background: transparent;
   border: none;
-  width: 58px;
+  width: 48px;
   text-align: center;
   outline: none;
   padding: 8px 0;
@@ -581,7 +595,7 @@ a.plus:active {
 }
 
 input.btn-form {
-  width: 462px;
+  width: 460px;
   /*max-height: 58px;*/
   border: 0;
   background: #81b3d2;
@@ -1166,8 +1180,9 @@ a.found-button-book:active {
 /*НАЧАЛО секция с ФУТЕРОМ*/
 footer {
   background: #fff;
+  border-top: 2px solid #f2f2f2;
   margin: 0px auto;
-  padding-top: 20px;
+  padding-top: 21px;
   padding-bottom: 30px;
 }
 
@@ -1189,7 +1204,7 @@ footer {
 
 .link-third {
   float: right;
-  width: 400px;
+  width: 398px;
   margin: 0px auto;
   padding-top: 18px;
   text-align: center;
@@ -1204,7 +1219,7 @@ footer {
 .social-btn {
   display: inline-block;
   width: 46px;
-  height: 46px;
+  height: 48px;
   margin: 0 1px;
   font-size: 0;
   vertical-align: top;
@@ -1259,7 +1274,7 @@ div.html-academy {
   font-size: 14px;
   color: black;
   margin: 0 auto;
-  padding-left: 45px;
+  padding-left: 42px;
   padding-top: 10px;
   text-decoration: none;
   text-align: center;
@@ -1272,6 +1287,9 @@ a.html-ac-pic {
   width: 113px;
   height: 39px;
   float: right;
+  position: relative;
+  right: 3px;
+  top: 3px;
 }
 
 a.html-ac-pic:hover {
