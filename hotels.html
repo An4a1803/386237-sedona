@@ -12,13 +12,15 @@
   <body>
     <header class="container">
       <nav class="menu-navigator container clearfix"><!--==========******БЛОК - МЕНЮ-НАВИГАЦИЯ******==========-->
-      <ul>
-        <li><a class="active-page" href="#">Информация</a></li>
-        <li><a href="#">Фото и видео</a></li>
-        <li><a class="menu-logo" href="index.html"><img src="img/logo.png" alt=""></a></li><!--добавить картинку логотипа menu-logo.png-->
-        <li class="menu-maps"><a href="#">Карта штата</a></li>
-        <li class="menu-hotels"><a href="hotels.html" class="menu-active">Гостиницы</a></li>
-      </ul>
+        <ul class="left">
+          <li><a class="menu-active" href="#">Информация</a></li>
+          <li><a href="#">Фото и видео</a></li>
+        </ul>
+          <a class="menu-logo" href="index.html"><img src="img/logo.png" alt=""></a>
+        <ul class="right">
+          <li class="menu-maps left"><a href="#">Карта штата</a></li>
+          <li  class="right"><a href="hotels.html">Гостиницы</a></li>
+        </ul>
     </nav>
     </header>
     <main class="hotels container">
@@ -77,7 +79,7 @@
               <div class="range-toggle range-toggle-max"></div>
             </div>
             <div class="btn-range">
-             <button class="btn-transparent" type="submit">Показать</button>
+             <button class="btn-transparent" type="submit" formaction="https://echo.htmlacademy.ru">Показать</button>
             </div><!--==========******КОНЕЦ БЛОК - ПОЛЗУНКИ СПРАВА******==========-->
           </div>
         </form>
