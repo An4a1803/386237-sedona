@@ -10,8 +10,9 @@
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
   <body>
-    <header class="container">
-      <nav class="menu-navigator container clearfix"><!--==========******БЛОК - МЕНЮ-НАВИГАЦИЯ******==========-->
+  <div class="shadow">
+    <header>
+      <nav class="menu-navigator clearfix"><!--==========******БЛОК - МЕНЮ-НАВИГАЦИЯ******==========-->
         <ul class="left">
           <li><a class="menu-active" href="#">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
@@ -21,11 +22,11 @@
           <li class="menu-maps left"><a href="#">Карта штата</a></li>
           <li  class="right"><a href="hotels.html">Гостиницы</a></li>
         </ul>
-    </nav>
+      </nav>
     </header>
-    <main class="hotels container">
+    <main class="hotels">
       <div class="background-filter">
-        <section class="filter container clearfix"><!--==========******БЛОК - ФИЛЬТР ВЫБОРА ОТЕЛЯ******==========-->
+        <section class="filter clearfix"><!--==========******БЛОК - ФИЛЬТР ВЫБОРА ОТЕЛЯ******==========-->
           <form method="post" action="/">
             <div class="filter-inf-house">
               <div class="filter-infrastructure"><!--==========******БЛОК - ИНФРАСТРУКТУРА******==========-->
@@ -79,46 +80,46 @@
               <div class="range-toggle range-toggle-max"></div>
             </div>
             <div class="btn-range">
-             <button class="btn-transparent" type="submit" formaction="https://echo.htmlacademy.ru">Показать</button>
+              <button class="btn-transparent" type="submit" formaction="https://echo.htmlacademy.ru">Показать</button>
             </div><!--==========******КОНЕЦ БЛОК - ПОЛЗУНКИ СПРАВА******==========-->
           </div>
         </form>
       </section>
     </div>
-      <div class="search container clearfix"><!--==========******БЛОК С СОРТИРОВКОЙ ОТЕЛЕЙ******==========-->
-        <div class="search-left-size">
-          <span class="search-found properties-black-h3">Найдено: 3</span>
-          <span class="search-sorting">Сортировка:</span>
-          <a href="#" class="search-select search-price menu-active-blue">По цене</a>
-          <a href="#" class="search-select search-type">По типу</a>
-          <a href="#" class="search-select search-rating">По рейтингу</a>
-        </div>
-        <div class="search-right-size"><!--==========******БЛОК СТРЕЛКИ СПРАВА******==========-->
-          <a class="search-up" href="#">
-            <!-- <img src="img/corner-up-gray.png"> -->
-          </a>
-          <a class="search-down menu-active-down" href="#">
-            <!-- <img src="img/corner-down-gray.png"> -->
-          </a>
-        </div>
+    <div class="search clearfix"><!--==========******БЛОК С СОРТИРОВКОЙ ОТЕЛЕЙ******==========-->
+      <div class="search-left-size">
+        <span class="search-found properties-black-h3">Найдено: 3</span>
+        <span class="search-sorting">Сортировка:</span>
+        <a href="#" class="search-select search-price menu-active-blue">По цене</a>
+        <a href="#" class="search-select search-type">По типу</a>
+        <a href="#" class="search-select search-rating">По рейтингу</a>
       </div>
+      <div class="search-right-size"><!--==========******БЛОК СТРЕЛКИ СПРАВА******==========-->
+        <a class="search-up" href="#">
+          <!-- <img src="img/corner-up-gray.png"> -->
+        </a>
+        <a class="search-down menu-active-down" href="#">
+          <!-- <img src="img/corner-down-gray.png"> -->
+        </a>
+      </div>
+    </div>
 
-  <div class="found-1 clearfix"><!--==========******НАЧАЛО С ОТЕЛЕМ АМАРА******==========-->
-    <div class="found-houses clearfix">
-      <div class="found-houses-img">
-        <img class="houses-img" src="img/amara-resort.jpg" alt="Amara resort & spa">
-      </div>
-      <div class="found-houses-all clearfix">
-        <div class="found-houses-info">
-          <a class="found-info-title properties-black-h3" href="#">Amara resort & spa</a>
+    <div class="found-1 clearfix"><!--==========******НАЧАЛО С ОТЕЛЕМ АМАРА******==========-->
+      <div class="found-houses clearfix">
+        <div class="found-houses-img">
+          <img class="houses-img" src="img/amara-resort.jpg" alt="Amara resort & spa">
         </div>
-        <div class="found-about clearfix">
-          <div class="found-houses-type">
-            <p class="found-houses-type properties-black-h4">Гостиница</p>
+        <div class="found-houses-all clearfix">
+          <div class="found-houses-info">
+            <a class="found-info-title properties-black-h3" href="#">Amara resort & spa</a>
           </div>
-          <div class="found-houses-price">
-            <p class="found-about-price properties-black-h4">от 4000 р.</p>
-          </div>
+          <div class="found-about clearfix">
+            <div class="found-houses-type">
+              <p class="found-houses-type properties-black-h4">Гостиница</p>
+            </div>
+            <div class="found-houses-price">
+              <p class="found-about-price properties-black-h4">от 4000 р.</p>
+            </div>
           </div>
           <div class="found-button clearfix">
             <div class="found-button-type-1">
@@ -140,24 +141,22 @@
       </div>
     </div><!--==========******КОНЕЦ БЛОК С ОТЕЛЕМ АМАРА******==========-->
 
-
-
-  <div class="found-1 clearfix"><!--==========******НАЧАЛО БЛОКА С ОТЕЛЕМ Desert Qual Inn******==========-->
-    <div class="found-houses clearfix">
-      <div class="found-houses-img">
-        <img class="houses-img" src="img/desert-quail.jpg" alt="Desert Qual Inn">
-      </div>
-      <div class="found-houses-all clearfix">
-        <div class="found-houses-info">
-          <a class="found-info-title properties-black-h3" href="#">Desert Quail Inn</a>
+    <div class="found-1 clearfix"><!--==========******НАЧАЛО БЛОКА С ОТЕЛЕМ Desert Qual Inn******==========-->
+      <div class="found-houses clearfix">
+        <div class="found-houses-img">
+          <img class="houses-img" src="img/desert-quail.jpg" alt="Desert Qual Inn">
         </div>
-        <div class="found-about clearfix">
-          <div class="found-houses-type">
-            <p class="found-houses-type properties-black-h4">Мотель</p>
+        <div class="found-houses-all clearfix">
+          <div class="found-houses-info">
+            <a class="found-info-title properties-black-h3" href="#">Desert Quail Inn</a>
           </div>
-          <div class="found-houses-price">
-            <p class="found-about-price properties-black-h4">от 3000 р.</p>
-          </div>
+          <div class="found-about clearfix">
+            <div class="found-houses-type">
+              <p class="found-houses-type properties-black-h4">Мотель</p>
+            </div>
+            <div class="found-houses-price">
+              <p class="found-about-price properties-black-h4">от 3000 р.</p>
+            </div>
           </div>
           <div class="found-button clearfix">
             <div class="found-button-type-1">
@@ -218,25 +217,26 @@
     </div><!--==========******КОНЕЦ С ОТЕЛЕМ VILLAS AT POCO******==========-->
 
   </main>
-  <footer class="container"><!--==========******БЛОК - ФУТЕР******==========-->
-    <div class="container clearfix">
-      <section class="link-first">
-        <a class="hashtag properties-black-h3" href="#">#visitsedona</a>
-      </section>
-      <section class="link-second">
-        <a class="social-btn social-btn-twitter" href="https://twitter.com">Twitter</a><!-- иконка твиттера png-->
-        <a class="social-btn social-btn-facebook" href="https://www.facebook.com">Facebook</a><!-- иконка контакта png-->
-        <a class="social-btn social-btn-youtube" href="http://www.youtube.com">Youtube</a><!-- иконка ютуба png-->
-      </section>
-      <section class="link-third">
-        <div class="html-academy">
-          <span class="html-ac">website by </span>
-          <a class="html-ac-pic" href="https://htmlacademy.ru/intensive/htmlcss">
-          <!-- <img class="html-im" src="img/html-academy-1.png" alt="HTMLacademy"> -->
-          </a>
+      <footer class="hotels"><!--==========******БЛОК - ФУТЕР******==========-->
+        <div class="clearfix">
+          <section class="link-first">
+            <a class="hashtag properties-black-h3" href="#">#visitsedona</a>
+          </section>
+          <section class="link-second">
+            <a class="social-btn social-btn-twitter" href="https://twitter.com">Twitter</a><!-- иконка твиттера png-->
+            <a class="social-btn social-btn-facebook" href="https://www.facebook.com">Facebook</a><!-- иконка контакта png-->
+            <a class="social-btn social-btn-youtube" href="http://www.youtube.com">Youtube</a><!-- иконка ютуба png-->
+          </section>
+          <section class="link-third">
+            <div class="html-academy">
+              <span class="html-ac">website by </span>
+              <a class="html-ac-pic" href="https://htmlacademy.ru/intensive/htmlcss">
+              <!-- <img class="html-im" src="img/html-academy-1.png" alt="HTMLacademy"> -->
+              </a>
+            </div>
+          </section>
         </div>
-      </section>
+      </footer>
     </div>
-  </footer>
- </body>
+  </body>
 </html>
