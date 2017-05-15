@@ -245,6 +245,7 @@ p.city-life {
   height: 255px;
   background: url(../img/pic-real-city-full.jpg);
   background-position: center;
+  background-size: cover;
   float: right;
 }
 /*КОНЕЦ Секция с НАСТОЯЩИЙ ГОРОДОК*/
