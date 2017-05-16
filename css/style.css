@@ -102,6 +102,11 @@ ul.right {
   width: 40%;
 }
 
+a.a-second {
+  padding-left: 15px;
+}
+
+
 a.menu-logo {
   display: inline-block;
   width: 20%;
