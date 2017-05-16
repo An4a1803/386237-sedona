@@ -680,10 +680,11 @@ main.hotels {
 
 .filter {
   margin: 0 auto;
-  max-height: 220px;
+  max-height: 217px;
   padding: 0;
   line-height: 21px;
   background: url("../img/background-2-small.jpg");
+  background-size: cover;
   color: #fff;
 }
 
@@ -691,7 +692,7 @@ main.hotels {
   width: 600px;
   margin: 0 auto;
   float: left;
-  padding-top: 13px;
+  padding-top: 12px;
   padding-bottom: 30px;
 }
 
@@ -752,9 +753,9 @@ input[type="checkbox"]:checked:disabled + label::before {
 }
 
 /*КОНЕЦ ЧЕКБОКСЫ*/
-.filter-houses-title {
+/*.filter-houses-title {
   padding-left: 5px;
-}
+}*/
 
 .filter-houses {
   width: 275px;
@@ -786,7 +787,7 @@ input[type="checkbox"]:checked:disabled + label::before {
 
 .price-controls {
   position: relative;
-  height: 36px;
+  height: 34px;
   margin-bottom: 20px;
   font-size: 0;
   border: 2px solid #ffffff;
@@ -926,14 +927,14 @@ input[type="checkbox"]:checked:disabled + label::before {
   display: inline-block;
   font-size: 12px;
   line-height: 18px;
-  padding-top: 5px;
+  padding-top: 6px;
 }
 
 .search-left-size {
   float: left;
-  padding-left: 70px;
+  padding-left: 72px;
   padding-right: 70px;
-  padding-top: 15px;
+  padding-top: 14px;
   padding-bottom: 30px;
   background: #fff;
 }
@@ -941,7 +942,7 @@ input[type="checkbox"]:checked:disabled + label::before {
 .search-left-size a {
   display: inline-block;
   width: 75px;
-  padding-right: 30px;
+  padding-right: 28px;
   font-size: 12px;
   line-height: 18px;
   color: #000;
@@ -1039,7 +1040,7 @@ a.menu-active-down {
   margin: 0px;
   border-top: 2px solid #f2f2f2;
   padding: 12px 72px;
-  padding-bottom: 28px;
+  padding-bottom: 27px;
   background: #fff;
   box-sizing: border-box;
 }
@@ -1121,7 +1122,7 @@ a.found-info-title:active {
 .found-button { /*--блок с кнопками подробнее и забронировать*/
   width: 270px;
   float: left;
-  padding-top: 15px;
+  padding-top: 14px;
 
 
 }
@@ -1242,7 +1243,8 @@ footer {
 }
 
 .link-first {
-  padding-top: 25px;
+  padding-top: 24px;
+  padding-left: 1px;
   float: left;
   width: 398px;
   margin: 0px auto;
@@ -1345,7 +1347,7 @@ a.html-ac-pic {
   float: right;
   position: relative;
   right: 3px;
-  top: 3px;
+  top: 2px;
 }
 
 a.html-ac-pic:hover {
