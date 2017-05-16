@@ -1044,8 +1044,8 @@ a.menu-active-down {
 .found-1 {
   margin: 0px;
   border-top: 2px solid #f2f2f2;
-  padding: 12px 72px;
-  padding-bottom: 27px;
+  padding: 13px 72px 25px;
+
   background: #fff;
   box-sizing: border-box;
 }
@@ -1248,7 +1248,7 @@ footer {
 }
 
 .link-first {
-  padding-top: 24px;
+  padding-top: 26px;
   padding-left: 1px;
   float: left;
   width: 398px;
@@ -1259,7 +1259,7 @@ footer {
 .link-second {
   float: left;
   width: 400px;
-  padding-top: 15px;
+  padding-top: 14px;
   margin: 0px auto;
   text-align: center;
 }
@@ -1268,7 +1268,7 @@ footer {
   float: right;
   width: 398px;
   margin: 0px auto;
-  padding-top: 18px;
+  padding-top: 20px;
   line-height: 26px;
   text-align: center;
 }
